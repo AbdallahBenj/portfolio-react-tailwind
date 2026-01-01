@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define your custom brand color */
+  --color-brand: #0b0f10ff;
+  /* Enable class-based Dark Mode */
+  --variant-dark: &: where(.dark, .dark *);
+}
