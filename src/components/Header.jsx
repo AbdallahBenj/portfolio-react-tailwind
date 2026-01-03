@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
-import { IoCloseSharp } from "react-icons/io5";
+import DarkMode from "./DarkMode.jsx";
+import MobileNavLink from "./MobileNavLink.jsx";
 
 const Header = () => {
   const pages = [
@@ -18,71 +17,70 @@ const Header = () => {
     },
   ];
 
-  const [isOpen, setOpen] = useState(false);
-
   return (
-    <header className="header-container flex h-14 w-full items-center bg-linear-to-r from-sky-700 to-sky-950 px-4 text-sky-100 shadow-[0_4px_12px_-4px_#dbeafe] md:h-16">
-      {/* Navbar */}
+    <header
+      className="header
+      sticky top-0
+    flex w-full
+    h-14
+    md:h-16
+    border-b border-amber-200 px-4
+    bg-linear-to-tr 
+    dark:from-slate-500 dark:via-slate-950
+    from-blue-100 to-blue-500
+    dark:text-slate-100  text-blue-700
+    shadow-[0_4px_12px_-4px_#dbeafe]"
+    >
+      <div
+        className="header-container m-auto
+      flex justify-between items-center w-full max-w-4xl"
+      >
+        {/*Brand Name*/}
+        <div className="brand">
+          {/* Logo */}
 
-      <nav className="header-content mx-auto flex h-full w-full max-w-4xl flex-row items-center gap-2 md:justify-between">
-        {/* Mobile Toggle Button */}
-
-        <button
-          aria-label="Toggle navigation menu"
-          aria-expanded={isOpen}
-          className={`cursor-pointer md:hidden ${
-            isOpen ? "ring-1" : ""
-          } rounded-sm p-1 text-2xl`}
-          onClick={() => setOpen(!isOpen)}
-        >
-          {isOpen ? <IoCloseSharp /> : <IoMenu />}
-        </button>
-
-        {/* Logo */}
-
-        <h1 className="text-2xl font-bold transition-colors duration-200 hover:text-sky-100">
-          <a href="#">Portfolio</a>
-        </h1>
-
-        {/* Desktop Nav Link */}
-
-        <ul className="hidden flex-row gap-6 md:flex">
-          {pages.map((page) => {
-            const { name, link } = page;
-            return (
-              <li
-                key={name}
-                className="font-medium transition-colors duration-200 hover:border-b hover:text-sky-300"
-              >
-                <a href={link}>{name}</a>
-              </li>
-            );
-          })}
-        </ul>
-
-        {/* mobile Nav Link */}
-
-        {
-          <ul
-            className={`fixed top-14 left-0 h-screen w-full transform bg-sky-100 p-5 font-bold text-sky-950 p-5transition-all duration-300 ease-in-out md:hidden ${
-              isOpen
-                ? "translate-x-0 opacity-100"
-                : "pointer-events-none -translate-x-full opacity-0"
-            } `}
+          <h1
+            className="text-2xl font-bold text-blue-600 dark:text-amber-300
+          transition-colors duration-200 hover:text-blue-700 dark:hover:text-amber-400"
           >
+            <a href="#">Portfolio</a>
+          </h1>
+        </div>
+
+        {/* Navbar */}
+
+        <nav
+          className="header-content
+      flex flex-row gap-2 md:justify-between"
+        >
+          {/* Desktop Nav Link */}
+          <ul className="hidden md:flex flex-row gap-6">
             {pages.map((page) => {
               const { name, link } = page;
               return (
-                <li key={name} className="border-b pt-4 pb-2 font-medium">
-                  <a href={link} onClick={() => setOpen(false)}>
+                <li key={name} className="">
+                  <a
+                    className="font-medium
+                    hover:text-blue-950 dark:hover:text-amber-300 hover:border-b
+                  transition-colors duration-200"
+                    href={link}
+                  >
                     {name}
                   </a>
                 </li>
               );
             })}
           </ul>
-        }
-      </nav>
+
+          {/* Dark Mode */}
+
+          <DarkMode />
+
+          {/* mobile Nav Link */}
+
+          <MobileNavLink navLinks={pages} />
+        </nav>
+      </div>
     </header>
   );
 };

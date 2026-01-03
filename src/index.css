@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
 @theme {
   /* Define your custom brand color */
-  --color-brand: #0b0f10ff;
+  --color-brand: #0a0a23;
+
+  --font-oswald: "Oswald", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+
   /* Enable class-based Dark Mode */
   --variant-dark: &: where(.dark, .dark *);
 }
+
+@utility font-oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@utility font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Enable manual Dark Mode switching by looking for the .dark class */
+@custom-variant dark (&:where(.dark, .dark *));
