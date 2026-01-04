@@ -20,15 +20,11 @@ const Header = () => {
   return (
     <header
       className="header
-      sticky top-0
-    flex w-full
-    h-14
-    md:h-16
-    border-b border-amber-200 px-4
-    bg-linear-to-tr 
-    dark:from-slate-500 dark:via-slate-950
-    from-blue-100 to-blue-500
-    dark:text-slate-100  text-blue-700
+    sticky top-0
+    flex w-full h-14 md:h-16 px-4
+    border-b border-blue-100
+    bg-linear-to-tr from-gray-200 via-gray-400 to-gray-500
+    dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
     shadow-[0_4px_12px_-4px_#dbeafe]"
     >
       <div
@@ -40,8 +36,8 @@ const Header = () => {
           {/* Logo */}
 
           <h1
-            className="text-2xl font-bold text-blue-600 dark:text-amber-300
-          transition-colors duration-200 hover:text-blue-700 dark:hover:text-amber-400"
+            className="text-2xl font-bold text-blue-900 dark:text-amber-300
+          transition-colors duration-200 hover:text-blue-950 dark:hover:text-amber-400"
           >
             <a href="#">Portfolio</a>
           </h1>
@@ -61,7 +57,9 @@ const Header = () => {
                 <li key={name} className="">
                   <a
                     className="font-medium
-                    hover:text-blue-950 dark:hover:text-amber-300 hover:border-b
+                    hover:border-b
+                    text-gray-900 hover:text-blue-900
+                    dark:text-gray-200 dark:hover:text-amber-300
                   transition-colors duration-200"
                     href={link}
                   >

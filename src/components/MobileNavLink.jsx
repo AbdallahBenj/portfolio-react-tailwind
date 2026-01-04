@@ -13,9 +13,9 @@ const MobileNavLink = ({ navLinks }) => {
         aria-controls="mobile-menu"
         aria-label="Toggle navigation menu"
         aria-expanded={isOpen}
-        className={`cursor-pointer md:hidden ${
-          isOpen ? "ring-1" : ""
-        } rounded-sm p-1 text-2xl`}
+        className={`cursor-pointer md:hidden
+          text-blue-950 dark:text-gray-100
+          ${isOpen ? "ring-1" : ""} rounded-sm p-1 text-2xl`}
         onClick={() => setOpen(!isOpen)}
       >
         {isOpen ? <IoCloseSharp /> : <IoMenu />}
@@ -24,8 +24,9 @@ const MobileNavLink = ({ navLinks }) => {
         id="mobile-menu"
         aria-hidden={!isOpen}
         inert={!isOpen ? "" : undefined}
-        className={`fixed top-14 left-0 h-screen w-full
-              transform bg-slate-700 p-5 font-bold text-slate-50 
+        className={`fixed top-14 left-0 h-screen w-full p-5
+          font-bold text-gray-800 dark:text-gray-50
+              transform bg-gray-300 dark:bg-gray-700  
               transition-all duration-500 ease-in-out md:hidden ${
                 isOpen
                   ? "translate-x-0 opacity-100"
@@ -38,7 +39,7 @@ const MobileNavLink = ({ navLinks }) => {
             <li
               key={page.name}
               className="flex items-center
-              border-b border-slate-300 h-12 font-medium"
+              border-b border-gray-500 h-12 font-medium"
             >
               <a
                 className="block w-full"

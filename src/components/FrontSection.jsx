@@ -2,9 +2,9 @@ const FrontSection = () => {
   return (
     <div
       className="front-section
-      bg-linear-to-tr from-gray-200 to-gray-400
-      dark:from-gray-700 dark:to-gray-900
       dark:bg-gray-900
+      bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
+      dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
       text-blue-950 dark:text-gray-100
       transition-colors duration-500"
     >
