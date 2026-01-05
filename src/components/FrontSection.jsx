@@ -30,7 +30,7 @@ const FrontSection = () => {
 
         <div
           className="profile-image md:mr-16
-          size-66 md:h-96 md:w-96 m-auto
+          size-62 md:h-96 md:w-96 m-auto
           border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
         dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
@@ -61,7 +61,7 @@ const FrontSection = () => {
           ></div>
           <h2
             className="font-oswald text-5xl font-bold tracking-wider
-            first-letter:text-5xl first-letter:text-gray-800 dark:first-letter:text-blue-500
+            first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300"
           >
             MY Name

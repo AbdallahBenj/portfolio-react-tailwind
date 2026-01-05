@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/Oswald.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 
 .dark {
   --svg-g1: #030712;
@@ -7,7 +21,7 @@
   --svg-bg: #dbeafe;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
 
 
 @theme {
@@ -21,26 +35,12 @@
   --svg-g2: #b7bec8;
   --svg-bg: #cce0ff;
 
-
-
-  --font-oswald: "Oswald",
-    sans-serif;
-  --font-montserrat: "Montserrat",
-    sans-serif;
+  --font-oswald: "Oswald", system-ui, sans-serif;
+  --font-montserrat: "Montserrat", system-ui, sans-serif;
 
 
   /* Enable class-based Dark Mode */
   --variant-dark: &: where(.dark, .dark *);
-}
-
-@utility font-oswald {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-}
-
-@utility font-montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
 }
 
 /* Enable manual Dark Mode switching by looking for the .dark class */
