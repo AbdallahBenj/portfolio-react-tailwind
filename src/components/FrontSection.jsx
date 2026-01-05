@@ -19,7 +19,7 @@ const FrontSection = () => {
       {/*Profile Section*/}
 
       <div
-        className="front-section-container p-4 
+        className="front-section-container p-6 
         flex flex-col md:flex-row-reverse 
         min-h-screen pt-(--header-mobile)
         md:min-h-screen md:pt-(--header-desktop)
@@ -30,8 +30,8 @@ const FrontSection = () => {
 
         <div
           className="profile-image md:mr-16
-        h-72 w-72 md:h-96 md:w-96 m-auto
-        border rounded-full text-blue-100
+          size-66 md:h-96 md:w-96 m-auto
+          border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
         dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
         >
@@ -53,29 +53,28 @@ const FrontSection = () => {
             text-gray-700 dark:text-gray-300
             scale-x-73 origin-left"
           >
-            Hello, My Name is
+            Hello, I'm
           </p>
           <div
             className="line 
-          border-b-2 w-30 mt-2 mb-12 text-gray-500"
+          border-b-2 w-16 mt-2 mb-12 text-gray-500"
           ></div>
           <h2
-            className="font-oswald text-5xl font-bold tracking-wider uppercase
-            first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
+            className="font-oswald text-5xl font-bold tracking-wider
+            first-letter:text-5xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300"
           >
             MY Name
           </h2>
           <h3
-            className="font-montserrat text-2xl 
-          text-gray-600 dark:text-gray-300 mt-2
-          scale-x-94 origin-left"
+            className="font-montserrat text-xl 
+          text-gray-600 dark:text-gray-300 mt-2"
           >
-            Front End Developer
+            Front-End Developer
           </h3>
           <div
             className="line
-          border-b w-15 my-4 text-gray-500"
+          border-b w-22 my-4 text-gray-500"
           ></div>
         </div>
       </div>

@@ -4,11 +4,19 @@ import MobileNavLink from "./MobileNavLink.jsx";
 const Header = () => {
   const pages = [
     {
+      name: "Home",
+      link: "#",
+    },
+    {
       name: "About",
       link: "#",
     },
     {
-      name: "Work",
+      name: "Skills",
+      link: "#",
+    },
+    {
+      name: "Projects",
       link: "#",
     },
     {
