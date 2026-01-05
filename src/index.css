@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 .dark {
   --svg-g1: #030712;
   --svg-g2: #111827;
@@ -12,6 +13,9 @@
 @theme {
   /* Define your custom brand color */
   --color-brand: #0a0a23;
+
+  --header-mobile: 4rem;
+  --header-desktop: 5rem;
 
   --svg-g1: #939dac;
   --svg-g2: #b7bec8;

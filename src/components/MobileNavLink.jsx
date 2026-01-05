@@ -24,8 +24,8 @@ const MobileNavLink = ({ navLinks }) => {
         id="mobile-menu"
         aria-hidden={!isOpen}
         inert={!isOpen}
-        className={`fixed top-14 left-0 h-screen w-full p-5 
-          font-bold text-gray-800 dark:text-gray-50
+        className={`fixed top-(--header-mobile) left-0 h-screen w-full p-5 
+          font-bold text-gray-900 dark:text-gray-200
               transform bg-gray-300 dark:bg-gray-700  
               transition-all duration-500 ease-in-out md:hidden ${
                 isOpen

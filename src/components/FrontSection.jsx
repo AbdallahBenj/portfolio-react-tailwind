@@ -5,46 +5,63 @@ import BgFrontSection from "./BgFrontSection.jsx";
 const FrontSection = () => {
   return (
     <div
-      className="front-section
+      className="front-section relative 
       transition-colors duration-500"
     >
       <BgFrontSection
-        className=" absolute w-full h-[calc(100vh-56px)] md:h-[calc(100vh-64px)] -z-10
+        className=" absolute w-full -z-10
+        h-screen md:h-screen
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
-      dark:bg-linear-to-tr dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
+      dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
       transition-colors duration-500"
       />
 
+      {/*Profile Section*/}
+
       <div
-        className="front-section-container p-4
-        flex flex-col md:flex-row-reverse m-auto
-        w-full max-w-4xl h-full min-h-[calc(100vh-3.5rem)]
-        md:min-h-[calc(100vh-4rem)]
+        className="front-section-container p-4 
+        flex flex-col md:flex-row-reverse 
+        min-h-screen pt-(--header-mobile)
+        md:min-h-screen md:pt-(--header-desktop)
+        w-full max-w-4xl m-auto
         transition-colors duration-500"
       >
+        {/*Profile Image Section*/}
+
         <div
-          className="profile-image
-        h-70 w-70 md:h-96 md:w-96 m-auto
+          className="profile-image md:mr-16
+        h-72 w-72 md:h-96 md:w-96 m-auto
         border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
         dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
         >
-          <FaUserCircle className="h-full w-full 
+          <FaUserCircle
+            className="h-full w-full 
           text-gray-700 dark:text-blue-500 
-          transition-colors duration-500" />
-          
+          transition-colors duration-500"
+          />
         </div>
-        <div className="flex flex-col justify-end">
+
+        {/*Profile Text Section*/}
+
+        <div
+          className="text-container 
+        flex flex-col justify-end mb-5 md:mb-10"
+        >
           <p
             className="text-xl font-bold font-montserrat 
             text-gray-700 dark:text-gray-300
-            scale-x-73 origin-left -z-10"
+            scale-x-73 origin-left"
           >
             Hello, My Name is
           </p>
-          <div className="border-b-2 w-30 mt-2 mb-12 text-gray-500"></div>
+          <div
+            className="line 
+          border-b-2 w-30 mt-2 mb-12 text-gray-500"
+          ></div>
           <h2
             className="font-oswald text-5xl font-bold tracking-wider uppercase
+            first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300"
           >
             MY Name
@@ -52,11 +69,14 @@ const FrontSection = () => {
           <h3
             className="font-montserrat text-2xl 
           text-gray-600 dark:text-gray-300 mt-2
-          scale-x-86 origin-left -z-10"
+          scale-x-94 origin-left"
           >
             Front End Developer
           </h3>
-          <div className="border-b w-15 my-4 text-gray-500"></div>
+          <div
+            className="line
+          border-b w-15 my-4 text-gray-500"
+          ></div>
         </div>
       </div>
     </div>

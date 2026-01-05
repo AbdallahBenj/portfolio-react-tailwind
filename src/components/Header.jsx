@@ -20,11 +20,11 @@ const Header = () => {
   return (
     <header
       className="header
-    sticky top-0
-    flex w-full h-14 md:h-16 px-4
+    fixed top-0 z-10
+    flex w-full h-(--header-mobile) md:h-(--header-desktop) px-4
     border-b border-blue-100
-    bg-linear-to-tr from-gray-200 via-gray-400 to-gray-500
-    dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
+    bg-linear-to-tr from-gray-200/40 via-gray-400/30 to-gray-500/40
+    dark:from-gray-700/30 dark:via-gray-900/40 dark:to-gray-950/50
     transition-colors duration-500
     shadow-[0_4px_12px_-4px_#dbeafe]"
     >
@@ -37,8 +37,10 @@ const Header = () => {
           {/* Logo */}
 
           <h1
-            className="text-2xl font-bold text-blue-900 dark:text-amber-200
-          transition-colors duration-200 hover:text-blue-950 dark:hover:text-amber-300"
+            className="text-2xl font-bold
+        text-blue-900 hover:text-blue-950
+        dark:text-amber-200 dark:hover:text-amber-300
+          transition-colors duration-200"
           >
             <a href="#">Portfolio</a>
           </h1>
@@ -60,7 +62,7 @@ const Header = () => {
                     className="font-medium
                     hover:border-b
                     text-gray-900 hover:text-blue-900
-                    dark:text-gray-200 dark:hover:text-blue-300
+                    dark:text-gray-300 dark:hover:text-blue-300
                   transition-colors duration-200"
                     href={link}
                   >
