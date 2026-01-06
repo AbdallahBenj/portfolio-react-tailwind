@@ -61,29 +61,24 @@ const FrontSection = () => {
           border-b-2 w-12 mt-2 mb-12 text-gray-500"
           ></div>
 
-          <div
-            className="name-profile
-          w-full max-w-md"
-          >
-            <h2
-              className="font-oswald text-5xl font-bold w-full
+          <h2
+            className="font-oswald text-5xl font-bold
             first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300"
-            >
-              MY Name
-            </h2>
-            <h3
-              className="font-inter text-xl w-full tracking-tighter
+          >
+            MY Name
+          </h2>
+          <h3
+            className="font-inter text-xl tracking-tight
 
           text-gray-600 dark:text-gray-300 mt-2"
-            >
-              Front-End Developer
-            </h3>
-          </div>
+          >
+            Front-End Developer
+          </h3>
 
           <div
             className="line
-          border-b w-22 my-4 text-gray-500"
+          border-b w-24 my-4 text-gray-500"
           ></div>
         </div>
       </div>
