@@ -5,7 +5,7 @@ import BgFrontSection from "./BgFrontSection.jsx";
 const FrontSection = () => {
   return (
     <div
-      className="front-section relative 
+      className="front-section relative
       transition-colors duration-500"
     >
       <BgFrontSection
@@ -22,7 +22,8 @@ const FrontSection = () => {
         className="front-section-container p-6 
         flex flex-col md:flex-row-reverse 
         min-h-screen pt-(--header-mobile)
-        md:min-h-screen md:pt-(--header-desktop)
+        md:min-h-screen
+        md:pt-(--header-desktop)
         w-full max-w-4xl m-auto
         transition-colors duration-500"
       >
