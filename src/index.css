@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @font-face {
   font-family: "Oswald";
   src: url("/fonts/Oswald.woff2") format("woff2");
@@ -8,15 +10,8 @@
 }
 
 @font-face {
-  font-family: "Barlow-condensed";
-  src: url("/fonts/Barlow-condensed.woff2") format("woff2");
-  font-weight: 200 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("/fonts/Inter.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
@@ -43,8 +38,9 @@
   --svg-bg: #cce0ff;
 
   --font-oswald: "Oswald", system-ui, sans-serif;
-  --font-montserrat: "Montserrat", system-ui, sans-serif;
-  --font-barlow-condensed: "Barlow-condensed", system-ui, sans-serif;
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
 
 
   /* Enable class-based Dark Mode */

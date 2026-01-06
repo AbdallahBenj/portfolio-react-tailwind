@@ -45,33 +45,41 @@ const FrontSection = () => {
         {/*Profile Text Section*/}
 
         <div
-          className="text-container 
+          className="text-container
         flex flex-col justify-end mb-5 md:mb-10"
         >
           <p
-            className="text-xl font-bold font-sans
+            className="text-xl font-inter
             text-gray-700 dark:text-gray-300
             scale-x-73 origin-left"
           >
             Hello, I'm
           </p>
           <div
-            className="line 
-          border-b-2 w-16 mt-2 mb-12 text-gray-500"
+            className="line
+          border-b-2 w-12 mt-2 mb-12 text-gray-500"
           ></div>
-          <h2
-            className="font-oswald text-5xl font-bold 
+
+          <div
+            className="name-profile
+          w-full max-w-md"
+          >
+            <h2
+              className="font-oswald text-5xl font-bold w-full
             first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300"
-          >
-            MY Name
-          </h2>
-          <h3
-            className="font-montserrat text-xl 
+            >
+              MY Name
+            </h2>
+            <h3
+              className="font-inter text-xl w-full tracking-tighter
+
           text-gray-600 dark:text-gray-300 mt-2"
-          >
-            Front-End Developer
-          </h3>
+            >
+              Front-End Developer
+            </h3>
+          </div>
+
           <div
             className="line
           border-b w-22 my-4 text-gray-500"
