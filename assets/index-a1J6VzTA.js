@@ -33,20 +33,18 @@ Error generating stack: `+u.message+`
                     text-gray-900 hover:text-blue-900
                     dark:text-gray-300 dark:hover:text-blue-300
                   transition-colors duration-200`,href:m,children:_})},_)})}),p.jsx(Ey,{}),p.jsx(_y,{navLinks:h})]})]})})};function My(h){return Te({attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"},child:[]}]})(h)}const py=({className:h})=>p.jsxs("svg",{className:h,viewBox:"0 0 500 320",preserveAspectRatio:"xMidYMid slice",xmlns:"http://www.w3.org/2000/svg",children:[p.jsxs("defs",{children:[p.jsxs("linearGradient",{id:"linearGradient24030",children:[p.jsx("stop",{offset:"0",stopColor:"var(--svg-g1)",stopOpacity:"1"}),p.jsx("stop",{offset:"1",stopColor:"var(--svg-g2)",stopOpacity:"1"})]}),p.jsx("filter",{id:"filter16666",x:"-0.0054692522",y:"-0.0063574527",width:"1.0109385",height:"1.0127149",children:p.jsx("feGaussianBlur",{stdDeviation:"1.3918661"})}),p.jsx("radialGradient",{href:"#linearGradient24030",id:"radialGradient24032",cx:"540.91394",cy:"61.198723",r:"305.38715",gradientTransform:"matrix(-1,0,0,-0.86028986,1081.8279,113.84736)",gradientUnits:"userSpaceOnUse"})]}),p.jsxs("g",{transform:"translate(-32.913921,-61.198723)",children:[p.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"var(--svg-bg)",filter:"url(#filter16666)"}),p.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"url(#radialGradient24032)"})]})]}),Dy=({id:h})=>p.jsxs("section",{id:h,className:`front-section relative
-      transition-colors duration-500`,children:[p.jsx(py,{className:` absolute w-full -z-10
-      h-screen md:h-screen
+      min-h-screen min-h-dvh md:min-h-screen grid
+      transition-colors duration-500`,children:[p.jsx(py,{className:`absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
       dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
       transition-colors duration-500`}),p.jsx("div",{className:`front-section-container
         flex justify-center
-        min-h-screen md:min-h-screen
         transition-colors duration-500`,children:p.jsxs("div",{className:`profile-card
           flex flex-col md:flex-row-reverse
           w-full max-w-4xl p-6
           m-2 md:m-6
           mt-[calc(var(--header-mobile)+0.5rem)]
-          md:mt-[calc(var(--header-desktop)+1.5rem)]
-          rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100`,children:[p.jsx("div",{className:`profile-image md:mr-16
+          md:mt-[calc(var(--header-desktop)+1.5rem)]`,children:[p.jsx("div",{className:`profile-image md:mr-16
           size-62 md:h-96 md:w-96 m-auto
           border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
