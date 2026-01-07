@@ -36,7 +36,7 @@ const SkillsSection = ({ id }) => {
   return (
     <section
       id={id}
-      className="about-section
+      className="skills-section
       flex items-center justify-center
           w-full min-h-screen
           bg-linear-to-r from-gray-100 to-gray-300
@@ -44,13 +44,16 @@ const SkillsSection = ({ id }) => {
       transition-colors duration-500"
     >
       <div
-        className="about-section-container
-              w-full max-w-4xl m-auto
-              p-6 pt-(--header-mobile) md:pt-(--header-desktop)"
+        className="skills-section-card
+        w-full max-w-4xl p-6
+        m-2 md:m-6 
+        mt-[calc(var(--header-mobile)+0.5rem)]
+        md:mt-[calc(var(--header-desktop)+1.5rem)]
+        rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
       >
         <h2
           ref={targetElement}
-          className="about-title
+          className="skills-title
         font-oswald font-semibold text-4xl
         text-gray-700 dark:text-gray-200"
         >
@@ -64,12 +67,12 @@ const SkillsSection = ({ id }) => {
 
         {/* Block Skills + Tools*/}
 
-        <div className="card-skills-tools flex flex-col md:flex-row">
+        <div className="card-skills-tools flex flex-col gap-4 md:gap-6 md:flex-row">
           {/* Block Skills*/}
 
           <div
             className="card-skills space-y-4
-         p-2 md:p-6 md:w-2/3"
+          md:w-2/3"
           >
             {skillsLevel.map((skill) => {
               return (
@@ -107,7 +110,7 @@ const SkillsSection = ({ id }) => {
           <div
             className="card-tools
             flex flex-wrap content-start
-            md:w-1/3 pt-6 md:pt-12 p-2 md:p-6 gap-4"
+            md:w-1/3 pt-6 md:pt-10 p-2 md:p-6 gap-4"
           >
             {tools.map((tool) => {
               return (

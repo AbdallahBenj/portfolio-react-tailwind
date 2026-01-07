@@ -10,9 +10,12 @@ const AboutSection = ({ id }) => {
       transition-colors duration-500"
     >
       <div
-        className="about-section-container
-              w-full max-w-4xl m-auto
-              p-6 pt-(--header-mobile) md:pt-(--header-desktop)"
+        className="about-section-card
+        w-full max-w-4xl p-6
+        m-2 md:m-6
+        mt-[calc(var(--header-mobile)+0.5rem)]
+        md:mt-[calc(var(--header-desktop)+1.5rem)]
+        rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
       >
         <h2
           className="about-title
