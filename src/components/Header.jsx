@@ -4,22 +4,27 @@ import MobileNavLink from "./MobileNavLink.jsx";
 const Header = () => {
   const pages = [
     {
+      id: 1,
       name: "Home",
       link: "#",
     },
     {
+      id: 2,
       name: "About",
       link: "#about",
     },
     {
+      id: 3,
       name: "Skills",
       link: "#skills",
     },
     {
+      id: 4,
       name: "Projects",
       link: "#",
     },
     {
+      id: 4,
       name: "Contact",
       link: "#",
     },
@@ -64,9 +69,9 @@ const Header = () => {
           {/* Desktop Nav Link */}
           <ul className="hidden md:flex flex-row gap-6">
             {pages.map((page) => {
-              const { name, link } = page;
+              const { id, name, link } = page;
               return (
-                <li key={name} className="">
+                <li key={id} className="">
                   <a
                     className="font-medium
                     hover:border-b
