@@ -37,8 +37,8 @@ const Header = () => {
     fixed top-0 z-10
     flex w-full h-(--header-mobile) md:h-(--header-desktop)
     border-b border-blue-100
-    bg-linear-to-tr from-gray-200/40 via-gray-400/30 to-gray-500/40
-    dark:from-gray-700/30 dark:via-gray-900/40 dark:to-gray-950/50
+    bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
+    dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
     transition-colors duration-500
     shadow-[0_4px_12px_-4px_#dbeafe]"
     >
@@ -51,7 +51,7 @@ const Header = () => {
           {/* Logo */}
 
           <h1
-            className="text-2xl font-bold
+            className="text-2xl md:text-4xl font-bold
         text-sky-900 hover:text-sky-950
         dark:text-sky-400 dark:hover:text-sky-500
           transition-colors duration-200"

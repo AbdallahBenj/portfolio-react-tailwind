@@ -12,13 +12,13 @@ const SkillsSection = ({ id }) => {
   const tools = [
     { id: 1, name: "git", color: "bg-cyan-500" },
     { id: 2, name: "github", color: "bg-cyan-500" },
-    { id: 3, name: "vite", color: "bg-lime-500" },
+    { id: 3, name: "vite", color: "bg-emerald-500" },
     { id: 4, name: "npm", color: "bg-pink-500" },
     { id: 5, name: "ui/ux", color: "bg-indigo-500" },
     { id: 6, name: "Responsive", color: "bg-sky-500" },
     { id: 7, name: "Design", color: "bg-blue-500" },
-    { id: 8, name: "Accessibility", color: "bg-slate-500" },
-    { id: 9, name: "Performance", color: "bg-yellow-500" },
+    { id: 8, name: "Accessibility", color: "bg-purple-500" },
+    { id: 9, name: "Performance", color: "bg-amber-500" },
   ];
   const [isVisible, setVisible] = useState(false);
   const targetElement = useRef(null);
@@ -50,10 +50,10 @@ const SkillsSection = ({ id }) => {
 
       <div
         className="skills-section-card
-        grid md:grid-cols-3 gap-4
+        grid md:grid-cols-3 gap-6
         w-full max-w-4xl 
         m-4 md:m-6 
-        mt-[calc(var(--header-mobile)+0.5rem)]
+        mt-[calc(var(--header-mobile)+1rem)]
         md:mt-[calc(var(--header-desktop)+1.5rem)]
         "
       >

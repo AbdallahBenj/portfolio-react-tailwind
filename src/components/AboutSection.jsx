@@ -1,4 +1,4 @@
-import { LuCodeXml, LuSmartphone, LuZap } from "react-icons/lu";
+import { LuSearchCode, LuTabletSmartphone, LuRefreshCcw } from "react-icons/lu";
 
 const AboutSection = ({ id }) => {
   const aboutContent = [
@@ -16,24 +16,24 @@ const AboutSection = ({ id }) => {
   const iconsCard = [
     {
       id: 1,
-      icon: LuCodeXml,
+      icon: LuSearchCode,
       text: "Clean, maintainable, and well-structured code",
-      iconColor: "text-rose-500",
-      boxColor: "border-rose-500 shadow-rose-700 dark:shadow-rose-400",
+      iconBgColor: "bg-sky-500",
+      boxColor: "border-sky-500 shadow-sky-700 dark:shadow-sky-400",
     },
     {
       id: 2,
-      icon: LuSmartphone,
+      icon: LuTabletSmartphone,
       text: "Fully responsive layouts for all screen sizes",
-      iconColor: "text-amber-500",
-      boxColor: "border-amber-400 shadow-amber-700 dark:shadow-amber-400",
+      iconBgColor: "bg-rose-500",
+      boxColor: "border-rose-500 shadow-rose-700 dark:shadow-rose-400",
     },
     {
       id: 3,
-      icon: LuZap,
-      text: "Modern tools like React & Tailwind CSS",
-      iconColor: "text-cyan-500",
-      boxColor: "border-cyan-500 shadow-cyan-700 dark:shadow-cyan-400",
+      icon: LuRefreshCcw,
+      text: "Built with modern tools like React and Tailwind CSS",
+      iconBgColor: "bg-emerald-500",
+      boxColor: "border-emerald-500 shadow-emerald-700 dark:shadow-emerald-400",
     },
   ];
 
@@ -49,10 +49,10 @@ const AboutSection = ({ id }) => {
     >
       <div
         className="about-section-card
-        grid grid-rows-1 md:grid-cols-3 gap-4
+        grid grid-rows-1 md:grid-cols-3 gap-6
         w-full max-w-4xl 
         m-4 md:m-6
-        mt-[calc(var(--header-mobile)+0.5rem)]
+        mt-[calc(var(--header-mobile)+1rem)]
         md:mt-[calc(var(--header-desktop)+1.5rem)]"
       >
         {/* About Card */}
@@ -105,15 +105,20 @@ const AboutSection = ({ id }) => {
         {iconsCard &&
           iconsCard.map((card) => {
             const Icon = card.icon;
-            const { id, text, iconColor, boxColor } = card;
+            const { id, text, iconBgColor, boxColor } = card;
             return (
               <div
                 key={id}
                 className={`icon-card 
-                p-6 text-center border ${boxColor}
+                p-8 text-center border ${boxColor}
                 rounded-xl shadow-sm`}
               >
-                <Icon className={`text-5xl ${iconColor} mb-6 m-auto`} />
+                <div
+                  className={`flex justify-center items-center
+                    rounded-full aspect-square w-14 m-auto mb-8 ${iconBgColor}`}
+                >
+                  <Icon className={`text-4xl text-blue-50 `} />
+                </div>
                 <p className="text-base text-gray-700 dark:text-blue-100">
                   {text}
                 </p>

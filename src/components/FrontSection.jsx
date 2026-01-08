@@ -31,14 +31,14 @@ const FrontSection = ({ id }) => {
           flex flex-col md:flex-row-reverse
           w-full max-w-4xl p-6
           m-2 md:m-6
-          mt-[calc(var(--header-mobile)+0.5rem)]
+          mt-[calc(var(--header-mobile)+1rem)]
           md:mt-[calc(var(--header-desktop)+1.5rem)]"
         >
           {/*Profile Image Section*/}
 
           <div
-            className="profile-image md:mr-16
-          size-62 md:h-96 md:w-96 m-auto
+            className="profile-image aspect-square
+          size-62 md:size-96 m-auto
           border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
         dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
@@ -64,28 +64,33 @@ const FrontSection = ({ id }) => {
               Hello, I'm
             </p>
             <div
-              className="line
-          border-b-2 w-12 mt-2 mb-12 text-gray-500"
+              className="line top
+          border-b-2 w-12 mt-2 mb-10 text-gray-500"
             ></div>
 
             <h2
               className="font-oswald text-5xl font-bold
-            first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-400
+            first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
           text-gray-700 dark:text-gray-300"
             >
               MY Name
             </h2>
             <h3
               className="font-inter text-xl tracking-tight
-
-          text-gray-600 dark:text-gray-300 mt-2"
+          text-gray-600 dark:text-gray-300"
             >
               Front-End Developer
             </h3>
-
+            <p className="text-lg font-medium mt-4">
+              <span className="text-sky-500">Code clean </span>
+              <span className="text-rose-500">— Build lean </span>
+              <span className="text-emerald-500 inline-block">
+                — Stay green.
+              </span>
+            </p>
             <div
-              className="line
-          border-b w-24 my-4 text-gray-500"
+              className="line-bottom
+          border-b w-26 my-4 text-gray-500"
             ></div>
           </div>
         </div>

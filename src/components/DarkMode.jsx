@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-import { MdLightMode } from "react-icons/md";
-import { MdNightlight } from "react-icons/md";
+import { MdLightMode, MdNightlight } from "react-icons/md";
 
 const DarkMode = () => {
   const [isDark, setDark] = useState(true);
