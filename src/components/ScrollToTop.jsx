@@ -15,8 +15,8 @@ const ScrollToTop = () => {
     >
       <LuSquareChevronUp
         className="size-10
-    text-sky-500 hover:text-sky-700
-    dark:text-sky-100 dark:hover:text-sky-500"
+    text-sky-900 hover:text-sky-950
+    dark:text-sky-400 dark:hover:text-sky-500"
       />
     </button>
   );

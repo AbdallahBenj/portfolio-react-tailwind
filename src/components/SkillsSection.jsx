@@ -67,7 +67,7 @@ const SkillsSection = ({ id }) => {
           <h2
             className="skills-title
         font-oswald font-semibold text-4xl
-        text-gray-800 dark:text-blue-50"
+        text-sky-900 dark:text-blue-50"
           >
             Skills
           </h2>
@@ -125,7 +125,7 @@ const SkillsSection = ({ id }) => {
           <h2
             className="tools-title
         font-oswald font-semibold text-4xl
-        text-gray-800 dark:text-blue-50"
+        text-sky-900 dark:text-blue-50"
           >
             Tools
           </h2>
