@@ -29,10 +29,10 @@ const FrontSection = ({ id }) => {
         <div
           className="profile-card
           flex flex-col md:flex-row-reverse
-          w-full max-w-4xl p-6
-          m-2 md:m-6
-          mt-[calc(var(--header-mobile)+1rem)]
-          md:mt-[calc(var(--header-desktop)+1.5rem)]"
+          w-full max-w-4xl
+          p-10
+          pt-[calc(var(--header-mobile)+1rem)]
+          md:pt-[calc(var(--header-desktop)+1.5rem)]"
         >
           {/*Profile Image Section*/}
 

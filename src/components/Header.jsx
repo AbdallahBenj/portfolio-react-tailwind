@@ -21,12 +21,12 @@ const Header = () => {
     {
       id: 4,
       name: "Projects",
-      link: "#",
+      link: "#projects",
     },
     {
       id: 4,
       name: "Contact",
-      link: "#",
+      link: "#test",
     },
   ];
 

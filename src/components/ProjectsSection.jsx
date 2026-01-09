@@ -1,0 +1,51 @@
+import useScroll from "../hooks/useScroll";
+
+const ProjectsSection = ({ id }) => {
+  useScroll([id]);
+  
+  return (
+    <section
+      className="projects-section
+      w-full
+      flex justify-center
+      bg-linear-to-r from-gray-100 to-gray-300
+      dark:from-gray-700 dark:to-gray-900
+      transition-colors duration-500"
+    >
+      {/* Projects Container */}
+      <div
+        id={id}
+        className="projects-container
+        flex flex-col
+        border 
+        min-h-screen
+        w-full max-w-4xl
+        p-4 md:p-6
+        pt-[calc(var(--header-mobile)+1rem)]
+        md:pt-[calc(var(--header-desktop)+1.5rem)]
+        "
+      >
+        {/* Projects Parent Card */}
+        <div
+          className="projects-cards
+          flex justify-center items-center flex-1
+          border
+          border-sky-500 w-full"
+        >
+          {/* Contents Child Cards Start */}
+
+          <h2
+            className="text-2xl
+        text-blue-900 dark:text-blue-50"
+          >
+            This is Projects Section
+          </h2>
+
+          {/* Contents Child Cards End */}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsSection;
