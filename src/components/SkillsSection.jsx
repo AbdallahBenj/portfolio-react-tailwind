@@ -36,7 +36,7 @@ const SkillsSection = ({ id }) => {
       {/* Skills Container */}
       <div
         id={id}
-        className="skills-container
+        className={`skills-container
         flex flex-col
         border 
         min-h-screen
@@ -44,7 +44,12 @@ const SkillsSection = ({ id }) => {
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]
-        "
+        transition-all duration-700 delay-200 ease-out 
+        ${
+          isVisible
+            ? "translate-y-0 scale-100 opacity-100"
+            : "translate-y-8 md:translate-y-6 scale-95 opacity-0"
+        }`}
       >
         {/* Skills Parent Card */}
         <div

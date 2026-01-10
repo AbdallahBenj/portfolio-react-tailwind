@@ -3,7 +3,8 @@ import { LuSearchCode, LuTabletSmartphone, LuRefreshCcw } from "react-icons/lu";
 import useScroll from "../hooks/useScroll";
 
 const AboutSection = ({ id }) => {
-  useScroll([id]);
+  const visibleSection = useScroll([id]);
+  const isVisible = visibleSection[id];
 
   const aboutContent = [
     {
@@ -53,7 +54,7 @@ const AboutSection = ({ id }) => {
       {/* About Container */}
       <div
         id={id}
-        className="about-container
+        className={`about-container
         flex flex-col
         border 
         min-h-screen
@@ -61,7 +62,12 @@ const AboutSection = ({ id }) => {
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]
-        "
+        transition-all duration-700 delay-200 ease-out 
+        ${
+          isVisible
+            ? "translate-y-0 scale-100 opacity-100"
+            : "translate-y-8 md:translate-y-6 scale-95 opacity-0"
+        }`}
       >
         {/* About Parent Card */}
         <div

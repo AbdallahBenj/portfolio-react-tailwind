@@ -1,8 +1,11 @@
 import { FaUserCircle } from "react-icons/fa";
 
+import useScroll from "../hooks/useScroll.js";
 import BgFrontSection from "./BgFrontSection.jsx";
 
 const FrontSection = ({ id }) => {
+  const sectionVisible = useScroll(["hero"]);
+  const isVisible = sectionVisible["hero"];
   return (
     <section
       id={id}
@@ -27,12 +30,19 @@ const FrontSection = ({ id }) => {
         {/*Profile Card*/}
 
         <div
-          className="profile-card
+          id="hero"
+          className={`hero-section-card
           flex flex-col md:flex-row-reverse
           w-full max-w-4xl
-          p-10
+          p-6
           pt-[calc(var(--header-mobile)+1rem)]
-          md:pt-[calc(var(--header-desktop)+1.5rem)]"
+          md:pt-[calc(var(--header-desktop)+1.5rem)]
+          transition-all duration-700 delay-200 ease-out 
+          ${
+            isVisible
+              ? "translate-y-0 scale-100 opacity-100"
+              : "translate-y-8 md:translate-y-6 scale-95 opacity-0"
+          }`}
         >
           {/*Profile Image Section*/}
 

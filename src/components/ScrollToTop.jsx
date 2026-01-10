@@ -1,6 +1,10 @@
 import { LuSquareChevronUp } from "react-icons/lu";
+import useScroll from "../hooks/useScroll";
 
 const ScrollToTop = () => {
+  const visibleSection = useScroll(["hero"]);
+  const isVisible = visibleSection["hero"];
+
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -10,7 +14,16 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className="cursor-pointer fixed z-50 right-6 bottom-6"
+      aria-label="Scroll to top"
+      aria-hidden={isVisible}
+      className={`scroll-to-top-btn
+      cursor-pointer fixed z-50 right-6 bottom-6
+      transition-all duration-500 ease-out delay-200
+      ${
+        isVisible
+          ? "opacity-0 translate-y-6 scale-90 pointer-events-none"
+          : "translate-y-0 scale-100 opacity-100"
+      }`}
       onClick={handleScrollToTop}
     >
       <LuSquareChevronUp

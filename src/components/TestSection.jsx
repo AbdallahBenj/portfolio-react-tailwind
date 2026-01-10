@@ -1,6 +1,8 @@
-// import useScroll from "../hooks/useScroll";
+import useScroll from "../hooks/useScroll";
 
 const TestSection = ({ id }) => {
+  const visibleSection = useScroll([id]);
+  const isVisible = visibleSection[id];
   return (
     <section
       className="test-section
@@ -13,7 +15,7 @@ const TestSection = ({ id }) => {
       {/* Test Container */}
       <div
         id={id}
-        className="test-container
+        className={`test-container
         flex flex-col
         border 
         min-h-screen
@@ -21,7 +23,12 @@ const TestSection = ({ id }) => {
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]
-        "
+        transition-all duration-700 delay-200 ease-out 
+        ${
+          isVisible
+            ? "translate-y-0 scale-100 opacity-100"
+            : "translate-y-8 md:translate-y-6 scale-95 opacity-0"
+        }`}
       >
         {/* Test Parent Card */}
         <div
