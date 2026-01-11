@@ -67,7 +67,7 @@ const AboutSection = ({ id }) => {
           className={`about-parent-card
           flex justify-center items-center flex-1
           w-full
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
           ${
             isVisible
               ? "translate-y-0 scale-100 opacity-100"

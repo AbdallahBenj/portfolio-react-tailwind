@@ -35,14 +35,6 @@
   --font-inter: "Inter", system-ui, sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
 
-  /* Section Animation */
-
-  --animate-section: transition-all duration-700 delay-200 ease-out;
-  --animation-section-start: translate-y-0 scale-100 opacity-100;
-  --animation-section-end: translate-y-6 md:translate-y-8 scale-95 opacity-0;
-
-
-
   /* Enable class-based Dark Mode */
   --variant-dark: &: where(.dark, .dark *);
 }

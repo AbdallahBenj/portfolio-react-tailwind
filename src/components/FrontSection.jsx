@@ -37,7 +37,7 @@ const FrontSection = ({ id }) => {
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
           ${
             isVisible
               ? "translate-y-0 scale-100 opacity-100"
