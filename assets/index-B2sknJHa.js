@@ -45,8 +45,8 @@ Error generating stack: `+e.message+`
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]
-          transition-all duration-700 delay-200 ease-out 
-          ${x?"scale-100 opacity-100":"scale-95 opacity-0"}`,children:[A.jsx("div",{className:`profile-image aspect-square
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[A.jsx("div",{className:`profile-image aspect-square
             size-62 md:size-96 m-auto
             border rounded-full text-blue-100
             shadow-[2px_4px_12px_3px] shadow-gray-600 
@@ -67,7 +67,6 @@ Error generating stack: `+e.message+`
       dark:from-gray-700 dark:to-gray-900
       transition-colors duration-500`,children:A.jsx("div",{id:m,className:`about-container
         flex flex-col
-        border
         min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
@@ -75,12 +74,11 @@ Error generating stack: `+e.message+`
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:A.jsx("div",{className:`about-parent-card
           flex justify-center items-center flex-1
           w-full
-          border border-red-500
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
           ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsxs("div",{className:`about-child-cards
             grid md:grid-cols-3 gap-6`,children:[A.jsxs("div",{className:`about-card
               md:col-span-3 p-6
-              rounded-xl shadow-md dark:shadow-md shadow-blue-950 dark:shadow-blue-100`,children:[A.jsx("h2",{className:`about-title
+              rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100`,children:[A.jsx("h2",{className:`about-title
                 font-oswald font-semibold text-4xl
                 text-sky-900 dark:text-sky-400`,children:"About me"}),A.jsx("div",{className:`line top
                 border-b w-26 mt-4 mb-12 
@@ -90,7 +88,7 @@ Error generating stack: `+e.message+`
                 border-b w-12 mt-12
                 text-sky-900 dark:text-sky-400`})]}),H&&H.map(R=>{const L=R.icon,{id:al,text:D,iconBgColor:p,boxColor:F}=R;return A.jsxs("div",{className:`icon-card 
                     p-8 text-center border ${F}
-                    rounded-xl shadow-md dark:shadow-md`,children:[A.jsx("div",{className:`flex justify-center items-center
+                    rounded-xl shadow-sm dark:shadow-sm`,children:[A.jsx("div",{className:`flex justify-center items-center
                       rounded-full aspect-square w-14 m-auto mb-8 ${p}`,children:A.jsx(L,{className:"text-4xl text-blue-50 "})}),A.jsx("p",{className:"text-base text-gray-700 dark:text-blue-100",children:D})]},al)})]})})})})},R1=({id:m})=>{const x=Me([m])[m],d=[{id:1,name:"React",level:"70%"},{id:2,name:"Tailwind",level:"75%"},{id:3,name:"JavaScript (ES6+)",level:"80%"},{id:4,name:"HTML5",level:"96%"},{id:5,name:"CSS3",level:"90%"}],H=[{id:1,name:"git",color:"bg-cyan-500"},{id:2,name:"github",color:"bg-cyan-500"},{id:3,name:"vite",color:"bg-emerald-500"},{id:4,name:"npm",color:"bg-pink-500"},{id:5,name:"ui/ux",color:"bg-indigo-500"},{id:6,name:"Responsive",color:"bg-sky-500"},{id:7,name:"Design",color:"bg-blue-500"},{id:8,name:"Accessibility",color:"bg-purple-500"},{id:9,name:"Performance",color:"bg-amber-500"}];return A.jsx("section",{className:`skills-section
       w-full
       flex justify-center
@@ -98,7 +96,6 @@ Error generating stack: `+e.message+`
       dark:from-gray-700 dark:to-gray-900
       transition-colors duration-500`,children:A.jsx("div",{id:m,className:`skills-container
         flex flex-col
-        border 
         min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
@@ -106,12 +103,11 @@ Error generating stack: `+e.message+`
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:A.jsx("div",{className:`skills-cards
           flex justify-center items-center flex-1
           w-full
-          border border-red-500
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
           ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsxs("div",{className:`skills-section-card
             grid md:grid-cols-3 gap-6
             w-full`,children:[A.jsxs("div",{className:`skills-card md:col-span-2
-              p-6 rounded-xl shadow-md dark:shadow-md shadow-blue-950 dark:shadow-blue-100`,children:[A.jsx("h2",{className:`skills-title
+              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100`,children:[A.jsx("h2",{className:`skills-title
                 font-oswald font-semibold text-4xl
                 text-sky-900 dark:text-blue-50`,children:"Skills"}),A.jsx("div",{className:`line-top
                 border-b w-26 mt-4 mb-4 md:mb-12 
@@ -126,7 +122,7 @@ Error generating stack: `+e.message+`
                           text-blue-50 text-xs bg-linear-to-r from-blue-400 to-blue-500`,style:{width:`${x?D:"10%"}`},children:D})})]},L)})}),A.jsx("div",{className:`line-bottom
                 border-b w-12 mt-4 md:mt-8
               text-gray-500`})]}),A.jsxs("div",{className:`tools-card
-              p-6 rounded-xl shadow-md dark:shadow-md shadow-blue-950 dark:shadow-blue-100`,children:[A.jsx("h2",{className:`tools-title
+              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100`,children:[A.jsx("h2",{className:`tools-title
                 font-oswald font-semibold text-4xl
                 text-sky-900 dark:text-blue-50`,children:"Tools"}),A.jsx("div",{className:`line-top
                 border-b w-26 mt-4 mb-4 md:mb-12 
@@ -152,7 +148,7 @@ Error generating stack: `+e.message+`
           flex justify-center items-center flex-1
           w-full
           border border-red-500 
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
         ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsx("h2",{className:`text-2xl
         text-blue-900 dark:text-blue-50`,children:"This is Projects Section"})})})})},q1=({id:m})=>{const x=Me([m])[m];return A.jsx("section",{className:`test-section
       w-full
@@ -170,7 +166,7 @@ Error generating stack: `+e.message+`
           flex justify-center items-center flex-1
           w-full
           border border-red-500
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
         ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsx("h2",{className:`text-2xl
         text-blue-900 dark:text-blue-50`,children:"This is test Section"})})})})},Y1=()=>{const _=Me(["hero"]).hero??!0,x=()=>{window.scrollTo({top:0,behavior:"smooth"})};return A.jsx("button",{"aria-label":"Scroll to top","aria-hidden":_,className:`scroll-to-top-btn
       cursor-pointer fixed z-50 right-6 bottom-6
