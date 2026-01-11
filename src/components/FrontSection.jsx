@@ -49,7 +49,7 @@ const FrontSection = ({ id }) => {
           <div
             className="profile-image aspect-square
             size-62 md:size-96
-            my-6 md:my-auto m-auto
+            mt-4 mb-2 md:my-auto m-auto
             border rounded-full text-blue-100
             shadow-[2px_4px_12px_3px] shadow-gray-600 
             dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
