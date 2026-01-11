@@ -45,7 +45,7 @@ Error generating stack: `+e.message+`
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
           ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[A.jsx("div",{className:`profile-image aspect-square
             size-62 md:size-96 m-auto
             border rounded-full text-blue-100
@@ -74,7 +74,7 @@ Error generating stack: `+e.message+`
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:A.jsx("div",{className:`about-parent-card
           flex justify-center items-center flex-1
           w-full
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
           ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsxs("div",{className:`about-child-cards
             grid md:grid-cols-3 gap-6`,children:[A.jsxs("div",{className:`about-card
               md:col-span-3 p-6
@@ -103,7 +103,7 @@ Error generating stack: `+e.message+`
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:A.jsx("div",{className:`skills-cards
           flex justify-center items-center flex-1
           w-full
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
           ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsxs("div",{className:`skills-section-card
             grid md:grid-cols-3 gap-6
             w-full`,children:[A.jsxs("div",{className:`skills-card md:col-span-2
@@ -148,7 +148,7 @@ Error generating stack: `+e.message+`
           flex justify-center items-center flex-1
           w-full
           border border-red-500 
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
         ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsx("h2",{className:`text-2xl
         text-blue-900 dark:text-blue-50`,children:"This is Projects Section"})})})})},q1=({id:m})=>{const x=Me([m])[m];return A.jsx("section",{className:`test-section
       w-full
@@ -166,7 +166,7 @@ Error generating stack: `+e.message+`
           flex justify-center items-center flex-1
           w-full
           border border-red-500
-          transition-all duration-700 delay-100 md:delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-out 
         ${x?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:A.jsx("h2",{className:`text-2xl
         text-blue-900 dark:text-blue-50`,children:"This is test Section"})})})})},Y1=()=>{const _=Me(["hero"]).hero??!0,x=()=>{window.scrollTo({top:0,behavior:"smooth"})};return A.jsx("button",{"aria-label":"Scroll to top","aria-hidden":_,className:`scroll-to-top-btn
       cursor-pointer fixed z-50 right-6 bottom-6
