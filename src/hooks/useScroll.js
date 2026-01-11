@@ -26,9 +26,9 @@ const useScroll = (arr = []) => {
     return () => observer.disconnect();
   }, [arr]);
 
-  // useEffect(() => {
-  //   console.log("Visible state changed:", visible);
-  // }, [visible]);
+  useEffect(() => {
+    console.log("Visible state changed:", visible);
+  }, [visible]);
 
   return visible;
 };

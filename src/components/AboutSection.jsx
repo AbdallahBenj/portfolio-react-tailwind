@@ -54,27 +54,27 @@ const AboutSection = ({ id }) => {
       {/* About Container */}
       <div
         id={id}
-        className={`about-container
+        className="about-container
         flex flex-col
-        border 
+        border
         min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
-        md:pt-[calc(var(--header-desktop)+1.5rem)]
-        transition-all duration-700 delay-200 ease-out 
-        ${
-          isVisible
-            ? "translate-y-0 scale-100 opacity-100"
-            : "translate-y-8 md:translate-y-6 scale-95 opacity-0"
-        }`}
+        md:pt-[calc(var(--header-desktop)+1.5rem)]"
       >
         {/* About Parent Card */}
         <div
-          className="about-parent-card
+          className={`about-parent-card
           flex justify-center items-center flex-1
-          border
-          border-sky-500 w-full"
+          w-full
+          border border-red-500
+          transition-all duration-700 delay-200 ease-out 
+          ${
+            isVisible
+              ? "translate-y-0 scale-100 opacity-100"
+              : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+          }`}
         >
           {/* Content Child Cards Start */}
 
