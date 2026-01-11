@@ -10,7 +10,7 @@ const FrontSection = ({ id }) => {
     <section
       id={id}
       className="front-section relative
-      min-h-dvh md:min-h-screen grid
+      min-h-vh md:min-h-screen grid
       transition-colors duration-500"
     >
       <BgFrontSection
