@@ -15,24 +15,24 @@ Error generating stack: `+e.message+`
               transition-all duration-500 ease-in-out md:hidden ${_?"translate-x-0 opacity-100":"-translate-x-full opacity-0"} `,children:m.map(d=>x.jsx("li",{className:`flex items-center
               font-medium h-14
               text-gray-700 dark:text-gray-200
-              border-b border-gray-500`,children:x.jsx("a",{className:"block w-full",href:d.link,onClick:()=>A(!1),children:d.name})},d.name))})]})},_1=()=>{const m=[{id:1,name:"Home",link:"#"},{id:2,name:"About",link:"#about"},{id:3,name:"Skills",link:"#skills"},{id:4,name:"Projects",link:"#projects"},{id:4,name:"Contact",link:"#test"}];return x.jsx("header",{className:`header
+              border-b border-gray-500`,children:x.jsx("a",{className:"block w-full",href:d.link,onClick:()=>A(!1),children:d.name})},d.name))})]})},_1=()=>{const m=[{id:1,name:"Home",link:"#home"},{id:2,name:"About",link:"#about"},{id:3,name:"Skills",link:"#skills"},{id:4,name:"Projects",link:"#projects"},{id:5,name:"Contact",link:"#test"}];return x.jsx("header",{className:`header
       font-oswald
-    fixed top-0 z-10
-    flex w-full h-(--header-mobile) md:h-(--header-desktop)
-    border-b border-blue-100
-    bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
-    dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
-    transition-colors duration-500
-    shadow-[0_4px_12px_-4px_#dbeafe]`,children:x.jsxs("div",{className:`header-container m-auto px-6
-      flex justify-between items-center w-full max-w-4xl`,children:[x.jsx("div",{className:"brand",children:x.jsx("h1",{className:`text-2xl md:text-4xl font-bold
-        text-sky-900 hover:text-sky-950
-        dark:text-sky-400 dark:hover:text-sky-500
-          transition-colors duration-200`,children:x.jsx("a",{href:"#",children:"Portfolio"})})}),x.jsxs("nav",{className:`header-content
-      flex flex-row gap-2 md:justify-between`,children:[x.jsx("ul",{className:"hidden md:flex flex-row gap-6",children:m.map(_=>{const{id:A,name:d,link:H}=_;return x.jsx("li",{className:"",children:x.jsx("a",{className:`font-medium
+      fixed top-0 z-10
+      flex w-full h-(--header-mobile) md:h-(--header-desktop)
+      border-b border-blue-100
+      bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
+      dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
+      transition-colors duration-500
+      shadow-[0_4px_12px_-4px_#dbeafe]`,children:x.jsxs("div",{className:`header-container m-auto px-6
+        flex justify-between items-center w-full max-w-4xl`,children:[x.jsx("a",{href:"/",className:"brand",children:x.jsx("span",{className:`font-oswald text-2xl md:text-4xl font-bold
+            text-sky-900 hover:text-sky-950
+            dark:text-sky-400 dark:hover:text-sky-500
+            transition-colors duration-200`,children:"Portfolio"})}),x.jsxs("nav",{"aria-label":"Main navigation",className:`nav-content
+          flex flex-row gap-2 md:justify-between`,children:[x.jsx("ul",{className:"hidden md:flex flex-row gap-6",children:m.map(_=>{const{id:A,name:d,link:H}=_;return x.jsx("li",{className:"",children:x.jsx("a",{className:`font-medium
                     hover:border-b
                     text-gray-900 hover:text-sky-950
                     dark:text-gray-300 dark:hover:text-sky-500
-                    transition-colors duration-200`,href:H,children:d})},`${A}-${d}`)})}),x.jsx(E1,{}),x.jsx(A1,{navLinks:m})]})]})})};function O1(m){return kt({attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"},child:[]}]})(m)}const Me=(m=[])=>{const[_,A]=Qa.useState({}),d=H=>{H.forEach(R=>{const L=R.target.id,al=R.isIntersecting;A(D=>D[L]===al?D:{...D,[L]:al})})};return Qa.useEffect(()=>{const H=new IntersectionObserver(d,{threshold:.2});return m.forEach(R=>{const L=document.getElementById(R);L&&H.observe(L)}),()=>H.disconnect()},[m]),Qa.useEffect(()=>{console.log("Visible state changed:",_)},[_]),_},M1=({className:m})=>x.jsxs("svg",{className:m,viewBox:"0 0 500 320",preserveAspectRatio:"xMidYMid slice",xmlns:"http://www.w3.org/2000/svg",children:[x.jsxs("defs",{children:[x.jsxs("linearGradient",{id:"linearGradient24030",children:[x.jsx("stop",{offset:"0",stopColor:"var(--svg-g1)",stopOpacity:"1"}),x.jsx("stop",{offset:"1",stopColor:"var(--svg-g2)",stopOpacity:"1"})]}),x.jsx("filter",{id:"filter16666",x:"-0.0054692522",y:"-0.0063574527",width:"1.0109385",height:"1.0127149",children:x.jsx("feGaussianBlur",{stdDeviation:"1.3918661"})}),x.jsx("radialGradient",{href:"#linearGradient24030",id:"radialGradient24032",cx:"540.91394",cy:"61.198723",r:"305.38715",gradientTransform:"matrix(-1,0,0,-0.86028986,1081.8279,113.84736)",gradientUnits:"userSpaceOnUse"})]}),x.jsxs("g",{transform:"translate(-32.913921,-61.198723)",children:[x.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"var(--svg-bg)",filter:"url(#filter16666)"}),x.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"url(#radialGradient24032)"})]})]}),D1=({id:m})=>{const A=Me([m])[m];return x.jsxs("section",{id:m,className:`front-section relative
+                    transition-colors duration-200`,href:H,children:d})},`${A}-${d}`)})}),x.jsx(E1,{}),x.jsx(A1,{navLinks:m})]})]})})};function O1(m){return kt({attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"},child:[]}]})(m)}const Me=(m=[])=>{const[_,A]=Qa.useState({}),d=H=>{H.forEach(R=>{const L=R.target.id,al=R.isIntersecting;A(D=>D[L]===al?D:{...D,[L]:al})})};return Qa.useEffect(()=>{const H=new IntersectionObserver(d,{threshold:.2});return m.forEach(R=>{const L=document.getElementById(R);L&&H.observe(L)}),()=>H.disconnect()},[m]),Qa.useEffect(()=>{console.log("Visible state changed:",_)},[_]),_},M1=({className:m})=>x.jsxs("svg",{className:m,viewBox:"0 0 500 320",preserveAspectRatio:"xMidYMid slice",xmlns:"http://www.w3.org/2000/svg",children:[x.jsxs("defs",{children:[x.jsxs("linearGradient",{id:"linearGradient24030",children:[x.jsx("stop",{offset:"0",stopColor:"var(--svg-g1)",stopOpacity:"1"}),x.jsx("stop",{offset:"1",stopColor:"var(--svg-g2)",stopOpacity:"1"})]}),x.jsx("filter",{id:"filter16666",x:"-0.0054692522",y:"-0.0063574527",width:"1.0109385",height:"1.0127149",children:x.jsx("feGaussianBlur",{stdDeviation:"1.3918661"})}),x.jsx("radialGradient",{href:"#linearGradient24030",id:"radialGradient24032",cx:"540.91394",cy:"61.198723",r:"305.38715",gradientTransform:"matrix(-1,0,0,-0.86028986,1081.8279,113.84736)",gradientUnits:"userSpaceOnUse"})]}),x.jsxs("g",{transform:"translate(-32.913921,-61.198723)",children:[x.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"var(--svg-bg)",filter:"url(#filter16666)"}),x.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"url(#radialGradient24032)"})]})]}),D1=({id:m})=>{const A=Me([m])[m];return x.jsxs("section",{id:m,"aria-labelledby":"hero-title",className:`front-section relative
       min-h-vh md:min-h-screen grid
       transition-colors duration-500`,children:[x.jsx(M1,{className:`absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
@@ -47,26 +47,27 @@ Error generating stack: `+e.message+`
           md:pt-[calc(var(--header-desktop)+1.5rem)]
           transition-all duration-700 delay-200 ease-out 
           ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsx("div",{className:`profile-image aspect-square
-            size-62 md:size-96
-            mt-4 mb-2 md:my-auto m-auto
+            size-56 md:size-96
+            my-6 md:my-auto m-auto
             border rounded-full text-blue-100
             shadow-[2px_4px_12px_3px] shadow-gray-600 
-            dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500`,children:x.jsx(O1,{className:`h-full w-full 
+            dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500`,children:x.jsx(O1,{"aria-hidden":"true",focusable:"false",className:`h-full w-full 
             text-gray-700 dark:text-blue-500 
               transition-colors duration-500`})}),x.jsxs("div",{className:`text-container
             flex flex-col justify-end mb-2 md:mb-6`,children:[x.jsxs("div",{className:`hello-paragraph
               transition-all duration-700 delay-200 ease-out 
-              ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsx("p",{className:`text-xl font-inter
+              ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsx("span",{className:`text-md md:text-lg font-inter
               text-gray-700 dark:text-gray-300
               scale-x-73 origin-left`,children:"Hello, I'm"}),x.jsx("div",{className:`line top
               border-b-2 w-12 mt-2 mb-6 text-gray-500`})]}),x.jsxs("div",{className:`name-paragraph
               transition-all duration-700 delay-400 ease-out 
-              ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsx("h2",{className:`font-oswald text-5xl font-bold
+              ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsx("h1",{id:"hero-title",className:`font-oswald text-4xl md:text-5xl lg:text-6xl font-bold
               first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
-            text-gray-700 dark:text-gray-300`,children:"MY Name"}),x.jsx("h3",{className:`font-inter text-xl tracking-tight
-            text-gray-600 dark:text-gray-300`,children:"Front-End Developer"})]}),x.jsxs("div",{className:`last-paragraph
+            text-gray-700 dark:text-gray-300`,children:"MY Name"}),x.jsxs("h2",{className:`font-inter text-md md:text-xl lg:text-2xl tracking-tight
+                text-gray-600 dark:text-gray-300`,children:["Front-End Developer",x.jsxs("span",{className:`font-inter text-sm md:text-lg lg:text-xl tracking-tight block
+                text-gray-500 dark:text-gray-400`,children:[" ","— React & Tailwind CSS"]})]})]}),x.jsxs("div",{className:`last-paragraph
               transition-all duration-700 delay-600 ease-out 
-              ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsxs("p",{className:"text-lg font-medium mt-4",children:[x.jsx("span",{className:"text-sky-500",children:"Code clean "}),x.jsx("span",{className:"text-rose-500",children:"— Build lean "}),x.jsxs("span",{className:"text-emerald-500 inline-block",children:[" ","— Stay green"]})]}),x.jsx("div",{className:`line-bottom
+              ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsxs("p",{className:"text-md md:text-lg font-medium mt-4",children:[x.jsx("span",{className:"text-sky-500",children:"Code clean "}),x.jsx("span",{className:"text-rose-500",children:"— Build lean "}),x.jsxs("span",{className:"text-emerald-500 inline-block",children:[" ","— Stay green"]})]}),x.jsx("div",{className:`line-bottom
               border-b w-26 my-4 text-gray-500`})]})]})]})})]})};function N1(m){return kt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"},child:[]},{tag:"path",attr:{d:"M3 3v5h5"},child:[]},{tag:"path",attr:{d:"M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"},child:[]},{tag:"path",attr:{d:"M16 16h5v5"},child:[]}]})(m)}function U1(m){return kt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"m13 13.5 2-2.5-2-2.5"},child:[]},{tag:"path",attr:{d:"m21 21-4.3-4.3"},child:[]},{tag:"path",attr:{d:"M9 8.5 7 11l2 2.5"},child:[]},{tag:"circle",attr:{cx:"11",cy:"11",r:"8"},child:[]}]})(m)}function j1(m){return kt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"rect",attr:{width:"18",height:"18",x:"3",y:"3",rx:"2"},child:[]},{tag:"path",attr:{d:"m8 14 4-4 4 4"},child:[]}]})(m)}function H1(m){return kt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"rect",attr:{width:"10",height:"14",x:"3",y:"8",rx:"2"},child:[]},{tag:"path",attr:{d:"M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"},child:[]},{tag:"path",attr:{d:"M8 18h.01"},child:[]}]})(m)}const C1=({id:m})=>{const A=Me([m])[m],d=[{id:1,text:"I'm a front-end developer focused on building, clean, accessible, and responsive user interfaces."},{id:2,text:"I work with React and Tailwind CSS to create modern web experiences."},{id:3,text:"I enjoy turning designs into real, usable products."}],H=[{id:"icon-1",icon:U1,text:"Clean, maintainable, and well-structured code",iconBgColor:"bg-sky-500",boxColor:"border-sky-500 shadow-sky-700 dark:shadow-sky-400"},{id:"icon-2",icon:H1,text:"Fully responsive layouts for all screen sizes",iconBgColor:"bg-rose-500",boxColor:"border-rose-500 shadow-rose-700 dark:shadow-rose-400"},{id:"icon-3",icon:N1,text:"Built with modern tools like React and Tailwind CSS",iconBgColor:"bg-emerald-500",boxColor:"border-emerald-500 shadow-emerald-700 dark:shadow-emerald-400"}];return x.jsx("section",{className:`about-section
       w-full
       flex justify-center
