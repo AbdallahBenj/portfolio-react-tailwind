@@ -6,7 +6,7 @@ const Header = () => {
     {
       id: 1,
       name: "Home",
-      link: "#",
+      link: "#home",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Header = () => {
       link: "#projects",
     },
     {
-      id: 4,
+      id: 5,
       name: "Contact",
       link: "#test",
     },
@@ -34,37 +34,38 @@ const Header = () => {
     <header
       className="header
       font-oswald
-    fixed top-0 z-10
-    flex w-full h-(--header-mobile) md:h-(--header-desktop)
-    border-b border-blue-100
-    bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
-    dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
-    transition-colors duration-500
-    shadow-[0_4px_12px_-4px_#dbeafe]"
+      fixed top-0 z-10
+      flex w-full h-(--header-mobile) md:h-(--header-desktop)
+      border-b border-blue-100
+      bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
+      dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
+      transition-colors duration-500
+      shadow-[0_4px_12px_-4px_#dbeafe]"
     >
       <div
         className="header-container m-auto px-6
-      flex justify-between items-center w-full max-w-4xl"
+        flex justify-between items-center w-full max-w-4xl"
       >
         {/*Brand Name*/}
-        <div className="brand">
+        <a href="/" className="brand">
           {/* Logo */}
 
-          <h1
-            className="text-2xl md:text-4xl font-bold
-        text-sky-900 hover:text-sky-950
-        dark:text-sky-400 dark:hover:text-sky-500
-          transition-colors duration-200"
+          <span
+            className="font-oswald text-2xl md:text-4xl font-bold
+            text-sky-900 hover:text-sky-950
+            dark:text-sky-400 dark:hover:text-sky-500
+            transition-colors duration-200"
           >
-            <a href="#">Portfolio</a>
-          </h1>
-        </div>
+            Portfolio
+          </span>
+        </a>
 
         {/* Navbar */}
 
         <nav
-          className="header-content
-      flex flex-row gap-2 md:justify-between"
+          aria-label="Main navigation"
+          className="nav-content
+          flex flex-row gap-2 md:justify-between"
         >
           {/* Desktop Nav Link */}
           <ul className="hidden md:flex flex-row gap-6">

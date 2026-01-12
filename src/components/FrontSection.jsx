@@ -9,6 +9,7 @@ const FrontSection = ({ id }) => {
   return (
     <section
       id={id}
+      aria-labelledby="hero-title"
       className="front-section relative
       min-h-vh md:min-h-screen grid
       transition-colors duration-500"
@@ -48,13 +49,15 @@ const FrontSection = ({ id }) => {
 
           <div
             className="profile-image aspect-square
-            size-62 md:size-96
-            mt-4 mb-2 md:my-auto m-auto
+            size-56 md:size-96
+            my-6 md:my-auto m-auto
             border rounded-full text-blue-100
             shadow-[2px_4px_12px_3px] shadow-gray-600 
             dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
           >
             <FaUserCircle
+              aria-hidden="true"
+              focusable="false"
               className="h-full w-full 
             text-gray-700 dark:text-blue-500 
               transition-colors duration-500"
@@ -76,13 +79,13 @@ const FrontSection = ({ id }) => {
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
             >
-              <p
-                className="text-xl font-inter
+              <span
+                className="text-md md:text-lg font-inter
               text-gray-700 dark:text-gray-300
               scale-x-73 origin-left"
               >
                 Hello, I'm
-              </p>
+              </span>
               <div
                 className="line top
               border-b-2 w-12 mt-2 mb-6 text-gray-500"
@@ -98,19 +101,27 @@ const FrontSection = ({ id }) => {
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
             >
-              <h2
-                className="font-oswald text-5xl font-bold
+              <h1
+                id="hero-title"
+                className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold
               first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
             text-gray-700 dark:text-gray-300"
               >
                 MY Name
-              </h2>
-              <h3
-                className="font-inter text-xl tracking-tight
-            text-gray-600 dark:text-gray-300"
+              </h1>
+              <h2
+                className="font-inter text-md md:text-xl lg:text-2xl tracking-tight
+                text-gray-600 dark:text-gray-300"
               >
                 Front-End Developer
-              </h3>
+                <span
+                  className="font-inter text-sm md:text-lg lg:text-xl tracking-tight block
+                text-gray-500 dark:text-gray-400"
+                >
+                  {" "}
+                  — React & Tailwind CSS
+                </span>
+              </h2>
             </div>
 
             <div
@@ -122,7 +133,7 @@ const FrontSection = ({ id }) => {
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
             >
-              <p className="text-lg font-medium mt-4">
+              <p className="text-md md:text-lg font-medium mt-4">
                 <span className="text-sky-500">Code clean </span>
                 <span className="text-rose-500">— Build lean </span>
                 <span className="text-emerald-500 inline-block">

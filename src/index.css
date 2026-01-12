@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Inter:wght@100..900&display=swap");
+
+
 @import "tailwindcss";
+
+
 
 @font-face {
   font-family: "Oswald";
@@ -33,7 +38,6 @@
 
   --font-oswald: "Oswald", system-ui, sans-serif;
   --font-inter: "Inter", system-ui, sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
 
   /* Enable class-based Dark Mode */
   --variant-dark: &: where(.dark, .dark *);
@@ -41,3 +45,13 @@
 
 /* Enable manual Dark Mode switching by looking for the .dark class */
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .font-oswald {
+    font-family: var(--font-oswald);
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+}
