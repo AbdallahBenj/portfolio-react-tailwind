@@ -1,7 +1,10 @@
 import DarkMode from "./DarkMode.jsx";
 import MobileNavLink from "./MobileNavLink.jsx";
+import useScrollHeader from "../hooks/useScrollHeader.js";
 
 const Header = () => {
+  const isUp = useScrollHeader();
+
   const pages = [
     {
       id: 1,
@@ -32,15 +35,20 @@ const Header = () => {
 
   return (
     <header
-      className="header
+      className={`header
       font-heading
       fixed top-0 z-10
       flex w-full h-(--header-mobile) md:h-(--header-desktop)
       border-b border-blue-100
       bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
       dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
-      transition-colors duration-500
-      shadow-[0_4px_12px_-4px_#dbeafe]"
+      shadow-[0_4px_12px_-4px_#dbeafe]
+      transition-all duration-700 
+      ${
+        !isUp
+          ? "translate-y-0 opacity-100 "
+          : "-translate-y-(--header-mobile) md:-translate-y-(--header-desktop) opacity-0"
+      }`}
     >
       <div
         className="header-container m-auto px-6

@@ -13,8 +13,8 @@ const MobileNavLink = ({ navLinks }) => {
         aria-label="Toggle navigation menu"
         aria-expanded={isOpen}
         className={`cursor-pointer md:hidden
-          text-blue-950 dark:text-gray-100
-          ${isOpen ? "ring-1" : ""} rounded-sm p-1 text-2xl`}
+        text-blue-950 dark:text-gray-100
+        ${isOpen ? "ring-1" : ""} rounded-sm p-1 text-2xl`}
         onClick={() => setOpen(!isOpen)}
       >
         {isOpen ? <IoCloseSharp /> : <IoMenu />}
@@ -24,13 +24,12 @@ const MobileNavLink = ({ navLinks }) => {
         aria-hidden={!isOpen}
         inert={!isOpen}
         className={`fixed top-(--header-mobile) left-0 h-screen w-full p-5 
-          font-bold text-gray-900 dark:text-gray-200
-              transform bg-gray-300 dark:bg-gray-700  
-              transition-all duration-500 ease-in-out md:hidden ${
-                isOpen
-                  ? "translate-x-0 opacity-100"
-                  : "-translate-x-full opacity-0"
-              } `}
+        text-gray-900 dark:text-gray-200
+        transform bg-gray-300 dark:bg-gray-700  
+        transition-all duration-500 ease-in-out md:hidden
+        ${
+          isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
+        } `}
       >
         {navLinks.map((page) => {
           // const { name, link } = page;
@@ -38,7 +37,7 @@ const MobileNavLink = ({ navLinks }) => {
             <li
               key={page.name}
               className="flex items-center
-              font-medium h-14
+              h-14
               text-gray-700 dark:text-gray-200
               border-b border-gray-500"
             >

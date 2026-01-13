@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "MyOswald";
   src: url("/fonts/oswald-latin-regular.woff2") format("woff2");
   font-weight: 400;
@@ -18,20 +25,6 @@
   font-family: "MyOswald";
   src: url("/fonts/oswald-latin-600.woff2") format("woff2");
   font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "MyOswald";
-  src: url("/fonts/oswald-latin-700.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter.woff2") format("woff2");
-  font-weight: 100 900;
   font-display: swap;
 }
 
@@ -53,8 +46,8 @@
   --svg-g2: #b7bec8;
   --svg-bg: #cce0ff;
 
-  --font-heading: "MyOswald", system-ui, sans-serif;
   --font-inter: "Inter", system-ui, sans-serif;
+  --font-heading: "MyOswald", system-ui, sans-serif;
 
   /* Enable class-based Dark Mode */
   --variant-dark: &: where(.dark, .dark *);
