@@ -44,15 +44,15 @@ const Header = () => {
         className="absolute inset-0 -z-10
         bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
         transition-opacity duration-700 ease-in-out
-        dark:opacity-0"
+        opacity-100 dark:opacity-0"
       />
 
       {/* Dark gradient */}
       <div
         className="absolute inset-0 -z-10
-        dark:bg-linear-to-tr dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
-        opacity-0 transition-opacity duration-700 ease-in-out
-        dark:opacity-100"
+        bg-linear-to-tr from-gray-700/70 via-gray-900/80 to-gray-950/90
+        transition-opacity duration-700 ease-in-out
+        opacity-0 dark:opacity-100"
       />
 
       <div
@@ -70,7 +70,7 @@ const Header = () => {
             font-medium
             text-sky-900 hover:text-sky-950
             dark:text-sky-400 dark:hover:text-sky-500
-            transition-colors duration-200"
+            transition-colors duration-300 ease-in-out"
           >
             Portfolio
           </span>
@@ -94,7 +94,7 @@ const Header = () => {
                     hover:border-b
                     text-gray-900 hover:text-sky-950
                     dark:text-gray-300 dark:hover:text-sky-500
-                    transition-colors duration-200"
+                    transition-colors duration-300 ease-in-out"
                     href={link}
                   >
                     {name}

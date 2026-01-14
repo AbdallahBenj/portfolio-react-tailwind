@@ -19,15 +19,14 @@ const FrontSection = ({ id }) => {
         className="absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
       dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
-      transition-colors duration-700"
+      transition-colors duration-700 ease-in-out"
       />
 
       {/*Profile Section*/}
 
       <div
         className="front-section-container
-        flex justify-center
-        transition-colors duration-700"
+        flex justify-center"
       >
         {/*Profile Card*/}
 
@@ -61,7 +60,7 @@ const FrontSection = ({ id }) => {
               focusable="false"
               className="h-full w-full 
             text-gray-700 dark:text-blue-500 
-              transition-colors duration-500"
+              transition-colors duration-500 ease-in-out"
             />
           </div>
 
