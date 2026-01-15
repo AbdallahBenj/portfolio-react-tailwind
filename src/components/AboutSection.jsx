@@ -53,8 +53,8 @@ const AboutSection = ({ id }) => {
       lg:min-h-[min(100dvh,1000px)]
 
 
-      bg-linear-to-r from-gray-100 to-gray-300
-      dark:from-gray-700 dark:to-gray-900
+      bg-linear-to-r from-gray-200 to-gray-300
+      dark:from-gray-800 dark:to-gray-950
       transition-colors duration-700"
     >
       {/* About Container */}
@@ -157,7 +157,7 @@ const AboutSection = ({ id }) => {
                   >
                     <div
                       className={`flex justify-center items-center
-                      rounded-full aspect-square w-14 m-auto mb-8 ${iconBgColor}`}
+                      rounded-lg aspect-square w-14 m-auto mb-8 ${iconBgColor}`}
                     >
                       <Icon className={`text-4xl text-blue-50 `} />
                     </div>

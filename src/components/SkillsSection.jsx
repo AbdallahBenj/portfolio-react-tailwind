@@ -2,7 +2,7 @@ import useScroll from "../hooks/useScroll";
 
 const SkillsSection = ({ id }) => {
   const visibleSections = useScroll([id]);
-  const isVisible = visibleSections[id];
+  const isSectionVisible = visibleSections[id];
 
   const skillsLevel = [
     { id: 1, name: "React", level: "70%" },
@@ -34,8 +34,8 @@ const SkillsSection = ({ id }) => {
       md:min-h-[min(100dvh,900px)]
       lg:min-h-[min(100dvh,1000px)]
 
-      bg-linear-to-r from-gray-100 to-gray-300
-      dark:from-gray-700 dark:to-gray-900
+      bg-linear-to-r from-gray-200 to-gray-300
+      dark:from-gray-800 dark:to-gray-950
       transition-colors duration-700"
     >
       {/* Skills Container */}
@@ -71,7 +71,7 @@ const SkillsSection = ({ id }) => {
               shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
               transition-all duration-700 delay-200 ease-out 
               ${
-                isVisible
+                isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
@@ -114,7 +114,7 @@ const SkillsSection = ({ id }) => {
                           transition-all duration-2500 ease-in-out
                           text-blue-50 text-xs bg-linear-to-r from-blue-400 to-blue-500`}
                           style={{
-                            width: `${isVisible ? level : "10%"}`,
+                            width: `${isSectionVisible ? level : "10%"}`,
                             transitionDelay: `${index * 100}ms`,
                           }}
                         >
@@ -140,7 +140,7 @@ const SkillsSection = ({ id }) => {
               p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
               transition-all duration-700 delay-400 ease-out 
               ${
-                isVisible
+                isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}

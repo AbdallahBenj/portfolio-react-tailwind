@@ -5,7 +5,7 @@ import BgFrontSection from "./BgFrontSection.jsx";
 
 const FrontSection = ({ id }) => {
   const sectionVisible = useScroll([id]);
-  const isVisible = sectionVisible[id];
+  const isSectionVisible = sectionVisible[id];
   return (
     <section
       id={id}
@@ -21,8 +21,8 @@ const FrontSection = ({ id }) => {
     >
       <BgFrontSection
         className="absolute inset-0 w-full h-full -z-10
-      bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
-      dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
+      bg-linear-to-tr from-gray-200 via-gray-300 to-gray-400
+      dark:bg-linear-to-r dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
       transition-colors duration-700 ease-in-out"
       />
 
@@ -44,7 +44,7 @@ const FrontSection = ({ id }) => {
           md:pt-[calc(var(--header-desktop)+1.5rem)]
           transition-all duration-700 delay-200 ease-in-out 
           ${
-            isVisible
+            isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"
               : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
           }`}
@@ -78,7 +78,7 @@ const FrontSection = ({ id }) => {
               className={`hello-paragraph
               transition-all duration-500 delay-200 ease-out 
               ${
-                isVisible
+                isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
@@ -101,7 +101,7 @@ const FrontSection = ({ id }) => {
               className={`name-paragraph
               transition-all duration-700 delay-400 ease-out 
               ${
-                isVisible
+                isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
@@ -133,7 +133,7 @@ const FrontSection = ({ id }) => {
               className={`last-paragraph
               transition-all duration-700 delay-600 ease-out 
               ${
-                isVisible
+                isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}

@@ -2,15 +2,15 @@ import useScroll from "../hooks/useScroll";
 
 const ProjectsSection = ({ id }) => {
   const visibleSection = useScroll([id]);
-  const isVisible = visibleSection[id];
+  const isSectionVisible = visibleSection[id];
 
   return (
     <section
       className="projects-section
       w-full
       flex justify-center
-      bg-linear-to-r from-gray-100 to-gray-300
-      dark:from-gray-700 dark:to-gray-900
+      bg-linear-to-r from-gray-200 to-gray-300
+      dark:from-gray-800 dark:to-gray-950
       transition-colors duration-700"
     >
       {/* Projects Container */}
@@ -33,7 +33,7 @@ const ProjectsSection = ({ id }) => {
           border border-red-500 
           transition-all duration-700 delay-200 ease-out 
         ${
-          isVisible
+          isSectionVisible
             ? "translate-y-0 scale-100 opacity-100"
             : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
         }`}
