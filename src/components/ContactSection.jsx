@@ -10,8 +10,12 @@ const ContactSection = ({ id }) => {
       className="contact-section
       w-full
       flex justify-center
+
+      min-h-[calc(100dvh-var(--footer-mobile))]
+      md:min-h-[calc(100dvh-var(--footer-desktop))]
+
       bg-linear-to-r from-gray-200 to-gray-300
-      dark:from-gray-800 dark:to-gray-950
+      dark:from-gray-800 dark:to-gray-900
       transition-colors duration-700"
     >
       {/* Contact Container */}
@@ -19,7 +23,6 @@ const ContactSection = ({ id }) => {
         id={id}
         className="contact-container
         flex flex-col
-        min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
@@ -63,7 +66,7 @@ const ContactSection = ({ id }) => {
 
             <div
               className="line top
-              border-b w-26 mt-4 mb-8 
+              border-b w-26 mt-2 mb-6 md:mt-6 md:mb-10 
               text-sky-900 dark:text-sky-400"
             ></div>
 
@@ -73,7 +76,7 @@ const ContactSection = ({ id }) => {
 
             <div
               className="line top
-              border-b w-26 mt-8 mb-12 
+              border-b w-26 mt-6 mb-6 md:mt-10 md:mb-12 
               text-sky-900 dark:text-sky-400"
             ></div>
 
@@ -83,7 +86,7 @@ const ContactSection = ({ id }) => {
 
             <div
               className="line bottom
-              border-b w-12 mt-12
+              border-b w-12 mt-6 md:mt-12
               text-sky-900 dark:text-sky-400"
             ></div>
           </div>

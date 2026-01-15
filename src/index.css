@@ -49,6 +49,9 @@ stop {
   --header-mobile: 4rem;
   --header-desktop: 5rem;
 
+  --footer-mobile: 5rem;
+  --footer-desktop: 4rem;
+
   --svg-g1: #939dac;
   --svg-g2: #b7bec8;
   --svg-bg: #cce0ff;

@@ -35,7 +35,7 @@ const SkillsSection = ({ id }) => {
       lg:min-h-[min(100dvh,1000px)]
 
       bg-linear-to-r from-gray-200 to-gray-300
-      dark:from-gray-800 dark:to-gray-950
+      dark:from-gray-800 dark:to-gray-900
       transition-colors duration-700"
     >
       {/* Skills Container */}

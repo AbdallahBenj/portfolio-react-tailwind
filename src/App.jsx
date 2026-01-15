@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
+import Footer from "./components/Footer.jsx";
 
 // import TestSection from "./components/TestSection.jsx";
 
@@ -18,6 +19,7 @@ function App() {
       <SkillsSection id="skills" />
       <ProjectsSection id="projects" />
       <ContactSection id="contact" />
+      <Footer />
       <ScrollToTop />
     </>
   );

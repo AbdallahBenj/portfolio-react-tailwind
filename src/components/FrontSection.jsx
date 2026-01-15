@@ -22,7 +22,7 @@ const FrontSection = ({ id }) => {
       <BgFrontSection
         className="absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-200 via-gray-300 to-gray-400
-      dark:bg-linear-to-r dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
+      dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
       transition-colors duration-700 ease-in-out"
       />
 
