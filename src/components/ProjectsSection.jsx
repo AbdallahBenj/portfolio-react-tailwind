@@ -1,5 +1,5 @@
 import useScroll from "../hooks/useScroll";
-import PAGES from "../data/pages.js"
+import PAGES from "../data/pages.js";
 
 const ProjectsSection = ({ id }) => {
   const visibleSection = useScroll([id]);
@@ -20,7 +20,7 @@ const ProjectsSection = ({ id }) => {
       
       bg-linear-to-r from-gray-200 to-gray-300
       dark:from-gray-800 dark:to-gray-900
-      transition-colors duration-700"
+      animation-colors"
     >
       {/* Projects Container */}
       <div
@@ -39,7 +39,7 @@ const ProjectsSection = ({ id }) => {
           flex justify-center items-center flex-1
           w-full
           border border-red-500 
-          transition-all duration-700 delay-200 ease-out 
+          animation-transform delay-200
         ${
           isSectionVisible
             ? "translate-y-0 scale-100 opacity-100"

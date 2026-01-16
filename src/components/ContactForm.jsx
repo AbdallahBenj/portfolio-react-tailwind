@@ -115,7 +115,7 @@ const ContactForm = () => {
           bg-gray-200 dark:bg-gray-800
           placeholder:text-gray-500
           text-gray-900 dark:text-gray-100
-          animation-transform delay-300
+          animation-transform delay-350
           ${
             isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -144,7 +144,7 @@ const ContactForm = () => {
           bg-gray-200 dark:bg-gray-800
           placeholder:text-gray-500
           text-gray-900 dark:text-gray-100
-          animation-transform delay-400
+          animation-transform delay-500
           ${
             isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"

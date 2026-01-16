@@ -142,7 +142,7 @@ const SkillsSection = ({ id }) => {
             <div
               className={`tools-card
               p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
-              animation-transform delay-300
+              animation-transform delay-400
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"

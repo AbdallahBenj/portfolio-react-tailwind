@@ -151,13 +151,13 @@ const AboutSection = ({ id }) => {
                     className={`icon-card 
                     p-8 text-center border ${boxColor}
                     rounded-xl shadow-sm dark:shadow-sm
-                    animation-transform delay-200
+                    animation-transform delay-300
                     ${
                       isSectionVisible
                         ? "translate-y-0 scale-100 opacity-100"
                         : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
                     }`}
-                    style={{ transitionDelay: `${200 + index * 150}ms` }}
+                    style={{ transitionDelay: `${400 + index * 150}ms` }}
                   >
                     <div
                       className={`flex justify-center items-center

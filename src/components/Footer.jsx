@@ -10,7 +10,7 @@ const Footer = () => {
       bg-linear-to-br from-gray-200 via-gray-300 to-gray-400
       dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
       shadow-sm shadow-sky-100
-      transition-colors duration-700"
+      animation-colors"
     >
       <div
         className="footer-container
