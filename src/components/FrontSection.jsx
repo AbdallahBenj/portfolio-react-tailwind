@@ -1,11 +1,11 @@
 import { FaUserCircle } from "react-icons/fa";
 
-import useScroll from "../hooks/useScroll.js";
+import useScrollSections from "../hooks/useScrollSections.js";
 import BgFrontSection from "./BgFrontSection.jsx";
 import PAGES from "../data/pages.js";
 
 const FrontSection = ({ id }) => {
-  const sectionVisible = useScroll([id]);
+  const sectionVisible = useScrollSections([id]);
   const isSectionVisible = sectionVisible[id];
 
   const page = PAGES.find((page) => page.id === id);

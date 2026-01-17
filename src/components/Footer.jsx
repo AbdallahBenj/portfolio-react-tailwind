@@ -19,12 +19,13 @@ const Footer = () => {
         flex flex-col md:flex-row justify-evenly"
       >
         <p className="text-gray-700 dark:text-gray-300">
+          <span className="text-sky-900 dark:text-sky-500">Portfolio</span> ©{" "}
+          {year} — All rights reserved
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
           Built with <span className="text-sky-500">React</span>{" "}
           <FaHeart aria-hidden="true" className="text-rose-500 inline" />{" "}
           <span className="text-emerald-500">Tailwind</span> CSS
-        </p>
-        <p className="text-gray-700 dark:text-gray-300">
-          © {year} — All rights reserved
         </p>
       </div>
     </footer>

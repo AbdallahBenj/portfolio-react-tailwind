@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import useScroll from "../hooks/useScroll";
+import useScrollSections from "../hooks/useScrollSections.js";
 
 const ContactForm = () => {
-  const visibleSections = useScroll(["contact"]);
+  const visibleSections = useScrollSections(["contact"]);
   const isSectionVisible = visibleSections["contact"];
 
   const [formData, setFormData] = useState({

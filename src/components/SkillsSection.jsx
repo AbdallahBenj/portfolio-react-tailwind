@@ -1,8 +1,8 @@
-import useScroll from "../hooks/useScroll";
+import useScrollSections from "../hooks/useScrollSections.js";
 import PAGES from "../data/pages.js";
 
 const SkillsSection = ({ id }) => {
-  const visibleSections = useScroll([id]);
+  const visibleSections = useScrollSections([id]);
   const isSectionVisible = visibleSections[id];
 
   const page = PAGES.find((page) => page.id === id);
@@ -38,8 +38,7 @@ const SkillsSection = ({ id }) => {
       md:min-h-[min(100dvh,900px)]
       lg:min-h-[min(100dvh,1000px)]
 
-      bg-linear-to-r from-gray-200 to-gray-300
-      dark:from-gray-800 dark:to-gray-900
+      sections-background
       animation-colors"
     >
       {/* Skills Container */}

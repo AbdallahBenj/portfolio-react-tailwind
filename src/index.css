@@ -74,6 +74,10 @@ stop {
   .animation-transform {
     @apply transition-all duration-700 ease-out transform-gpu will-change-transform motion-reduce:transition-none motion-reduce:transform-none;
   }
+
+  .sections-background {
+    @apply bg-linear-to-r from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900
+  }
 }
 
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
-const MobileNavLink = ({ navLinks }) => {
+const MobileNavLink = ({ navLinks, currentSection }) => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -34,21 +34,25 @@ const MobileNavLink = ({ navLinks }) => {
         {navLinks
           .filter((page) => page.enabled)
           .map((page) => {
-            // const { name, link } = page;
+            const { id, name, link } = page;
             return (
               <li
-                key={page.name}
-                className="flex items-center
+                key={name}
+                className={`flex items-center
               h-14
-              text-gray-700 dark:text-gray-200
-              border-b border-gray-500"
+              border-b border-gray-500
+              ${
+                id === currentSection
+                  ? "text-sky-700 dark:text-sky-400"
+                  : "text-gray-800 dark:text-gray-200"
+              }`}
               >
                 <a
                   className="block w-full"
-                  href={page.link}
+                  href={link}
                   onClick={() => setOpen(false)}
                 >
-                  {page.name}
+                  {name}
                 </a>
               </li>
             );

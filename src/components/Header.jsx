@@ -1,8 +1,15 @@
+import { useMemo } from "react";
+
 import DarkMode from "./DarkMode.jsx";
 import MobileNavLink from "./MobileNavLink.jsx";
+
+import useCurrentSection from "../hooks/useCurrentSection.js";
 import PAGES from "../data/pages.js";
 
 const Header = () => {
+  const sectionIds = useMemo(() => PAGES.map((page) => page.id), []);
+  const currentSection = useCurrentSection(sectionIds);
+
   return (
     <header
       className="header font-heading
@@ -42,7 +49,7 @@ const Header = () => {
             className="text-2xl md:text-4xl
             font-medium
             text-sky-900 hover:text-sky-950
-            dark:text-sky-400 dark:hover:text-sky-500
+            dark:text-sky-500 dark:hover:text-sky-400
             animation-colors ease-in-out"
           >
             Portfolio
@@ -63,11 +70,16 @@ const Header = () => {
               return (
                 <li key={`${id}-${name}`} className="">
                   <a
-                    className="font-medium
+                    className={`font-medium
                     hover:border-b
-                    text-gray-800 hover:text-sky-950
-                    dark:text-gray-300 dark:hover:text-sky-500
-                    animation-colors ease-in-out"
+                    hover:text-sky-900
+                    dark:hover:text-sky-500
+                    animation-colors ease-in-out
+                    ${
+                      id === currentSection
+                        ? "text-sky-700 dark:text-sky-400"
+                        : "text-gray-800 dark:text-gray-200"
+                    }`}
                     href={link}
                   >
                     {name}
@@ -83,7 +95,7 @@ const Header = () => {
 
           {/* mobile Nav Link */}
 
-          <MobileNavLink navLinks={PAGES} />
+          <MobileNavLink navLinks={PAGES} currentSection={currentSection} />
         </nav>
       </div>
     </header>

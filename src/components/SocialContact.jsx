@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin, FaFreeCodeCamp } from "react-icons/fa";
 
-import useScroll from "../hooks/useScroll";
+import useScrollSections from "../hooks/useScrollSections.js";
 
 const SocialContact = () => {
-  const visibleSection = useScroll(["contact"]);
+  const visibleSection = useScrollSections(["contact"]);
   const isSectionVisible = visibleSection["contact"];
 
   const socialContent = [
@@ -35,7 +35,7 @@ const SocialContact = () => {
       {socialContent.map((icon, index) => {
         const { id, name, Icon, link } = icon;
         return (
-          <li key={id} className="">
+          <li key={id}>
             <a
               href={link}
               aria-label={name}
@@ -46,7 +46,7 @@ const SocialContact = () => {
               rounded-lg p-2
 
               size-10 md:size-12 
-            inline-flex items-center justify-center
+              inline-flex items-center justify-center
 
               bg-sky-900 hover:bg-sky-950
               dark:bg-gray-100 hover:dark:bg-gray-300

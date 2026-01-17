@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
-const useScroll = (arr = []) => {
+const useScrollSections = (sectionsIds = []) => {
   const [visible, setVisible] = useState({});
 
-  const handleScroll = (entries) => {
+  const handleScroll = useCallback((entries) => {
     entries.forEach((entry) => {
       const id = entry.target.id;
       const isVisible = entry.isIntersecting;
@@ -13,24 +13,20 @@ const useScroll = (arr = []) => {
         return { ...prev, [id]: isVisible };
       });
     });
-  };
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleScroll, { threshold: 0.2 });
 
-    arr.forEach((el) => {
-      const id = document.getElementById(el);
+    sectionsIds.forEach((section) => {
+      const id = document.getElementById(section);
       if (id) observer.observe(id);
     });
 
     return () => observer.disconnect();
-  }, [arr]);
-
-  // useEffect(() => {
-  //   console.log("Visible state changed:", visible);
-  // }, [visible]);
+  }, [sectionsIds, handleScroll]);
 
   return visible;
 };
 
-export default useScroll;
+export default useScrollSections;
