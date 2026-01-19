@@ -34,7 +34,7 @@ npm run dev
 
 ## 👤 Author
 
-**Abdallah BENJALAL**  
+**Abdallah**  
 Front-End Web Developer  
 GitHub: https://github.com/your-username  
 LinkedIn: https://linkedin.com/in/your-profile
