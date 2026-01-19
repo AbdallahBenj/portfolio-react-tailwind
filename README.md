@@ -8,7 +8,7 @@ Built with a focus on clean design, accessibility, and responsive layouts.
 
 ## 🌐 Demo
 
-🔗 [Portfolio Live Demo](https://abdallahbenj.github.io/new-portfolio/)
+🔗 [Portfolio Live Demo](https://abdallahbenj.github.io/portfolio-react-tailwind/)
 
 ## 🛠 Technologies
 
