@@ -1,5 +1,7 @@
 import useScrollSections from "@/hooks/useScrollSections.js";
 import PAGES from "@/data/pages.js";
+import skillsLevelContent from "@/data/skillsLevelContent.js";
+import toolsContent from "@/data/toolsContent.js";
 
 const SkillsSection = ({ id }) => {
   const visibleSections = useScrollSections([id]);
@@ -7,26 +9,6 @@ const SkillsSection = ({ id }) => {
 
   const page = PAGES.find((page) => page.id === id);
   if (!page || !page.enabled) return;
-
-  const skillsLevel = [
-    { id: 1, name: "React", level: "70%" },
-    { id: 2, name: "Tailwind", level: "75%" },
-    { id: 3, name: "JavaScript (ES6+)", level: "80%" },
-    { id: 4, name: "HTML5", level: "96%" },
-    { id: 5, name: "CSS3", level: "90%" },
-  ];
-
-  const tools = [
-    { id: 1, name: "git", color: "bg-cyan-500" },
-    { id: 2, name: "github", color: "bg-cyan-500" },
-    { id: 3, name: "vite", color: "bg-emerald-500" },
-    { id: 4, name: "npm", color: "bg-pink-500" },
-    { id: 5, name: "ui/ux", color: "bg-indigo-500" },
-    { id: 6, name: "Responsive", color: "bg-sky-500" },
-    { id: 7, name: "Design", color: "bg-blue-500" },
-    { id: 8, name: "Accessibility", color: "bg-purple-500" },
-    { id: 9, name: "Performance", color: "bg-amber-500" },
-  ];
 
   return (
     <section
@@ -93,7 +75,7 @@ const SkillsSection = ({ id }) => {
               ></div>
 
               <div className="ranges-skills space-y-4">
-                {skillsLevel.map((skill, index) => {
+                {skillsLevelContent.map((skill, index) => {
                   const { id, name, level } = skill;
                   return (
                     <div key={id}>
@@ -166,7 +148,7 @@ const SkillsSection = ({ id }) => {
                 flex flex-wrap content-start
                 gap-4"
               >
-                {tools.map((tool) => {
+                {toolsContent.map((tool) => {
                   const { id, name, color } = tool;
                   return (
                     <div

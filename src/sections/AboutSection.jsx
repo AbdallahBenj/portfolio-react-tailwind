@@ -1,7 +1,7 @@
-import { LuSearchCode, LuTabletSmartphone, LuRefreshCcw } from "react-icons/lu";
-
 import useScrollSections from "@/hooks/useScrollSections.js";
 import PAGES from "@/data/pages.js";
+import aboutContent from "@/data/aboutContent.js";
+import iconsCardContent from "@/data/iconsCardContent.js";
 
 const AboutSection = ({ id }) => {
   const visibleSection = useScrollSections([id]);
@@ -9,42 +9,6 @@ const AboutSection = ({ id }) => {
 
   const page = PAGES.find((page) => page.id === id);
   if (!page || !page.enabled) return true;
-
-  const aboutContent = [
-    {
-      id: 1,
-      text: "I'm a front-end developer focused on building, clean, accessible, and responsive user interfaces.",
-    },
-    {
-      id: 2,
-      text: "I work with React and Tailwind CSS to create modern web experiences.",
-    },
-    { id: 3, text: "I enjoy turning designs into real, usable products." },
-  ];
-
-  const iconsCard = [
-    {
-      id: "icon-1",
-      icon: LuSearchCode,
-      text: "Clean, maintainable, and well-structured code",
-      iconBgColor: "bg-sky-500",
-      boxColor: "border-sky-500 shadow-sky-700 dark:shadow-sky-400",
-    },
-    {
-      id: "icon-2",
-      icon: LuTabletSmartphone,
-      text: "Fully responsive layouts for all screen sizes",
-      iconBgColor: "bg-rose-500",
-      boxColor: "border-rose-500 shadow-rose-700 dark:shadow-rose-400",
-    },
-    {
-      id: "icon-3",
-      icon: LuRefreshCcw,
-      text: "Built with modern tools like React and Tailwind CSS",
-      iconBgColor: "bg-emerald-500",
-      boxColor: "border-emerald-500 shadow-emerald-700 dark:shadow-emerald-400",
-    },
-  ];
 
   return (
     <section
@@ -139,8 +103,8 @@ const AboutSection = ({ id }) => {
 
             {/* Icons Cards */}
 
-            {iconsCard &&
-              iconsCard.map((card, index) => {
+            {iconsCardContent &&
+              iconsCardContent.map((card, index) => {
                 const Icon = card.icon;
                 const { id, text, iconBgColor, boxColor } = card;
 

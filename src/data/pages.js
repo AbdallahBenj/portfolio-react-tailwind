@@ -21,7 +21,7 @@ const PAGES = [
     id: "projects",
     name: "Projects",
     link: "#projects",
-    enabled: false,
+    enabled: true,
   },
   {
     id: "contact",
