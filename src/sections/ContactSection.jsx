@@ -1,6 +1,6 @@
 import useScrollSections from "@/hooks/useScrollSections.js";
-import SocialContact from "@/components/common/SocialContact.jsx";
-import ContactForm from "@/components/common/ContactForm.jsx";
+import SocialContact from "@/components/SocialContact.jsx";
+import ContactForm from "@/components/ContactForm.jsx";
 import PAGES from "@/data/pages.js";
 
 const ContactSection = ({ id }) => {

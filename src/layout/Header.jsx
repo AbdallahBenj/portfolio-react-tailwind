@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import DarkMode from "@/components/common/DarkMode.jsx";
+import DarkMode from "@/components/DarkMode.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 
 import useCurrentSection from "@/hooks/useCurrentSection.js";

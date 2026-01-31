@@ -2,7 +2,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaUserAstronaut } from "react-icons/fa";
 
 import useScrollSections from "@/hooks/useScrollSections.js";
-import BgFrontSection from "@/components/common/BgFrontSection.jsx";
+import BgFrontSection from "@/components/BgFrontSection.jsx";
 import PAGES from "@/data/pages.js";
 
 const FrontSection = ({ id }) => {
