@@ -78,7 +78,7 @@ const ContactForm = () => {
         <input
           id="name"
           className={`w-full
-          py-2 px-3 rounded
+          py-2 px-3 rounded-lg
           ring-2 ring-gray-500
           outline-2 outline-transparent
           valid:outline-green-500
@@ -107,7 +107,7 @@ const ContactForm = () => {
         <input
           id="email"
           className={` w-full
-          py-2 px-3 rounded
+          py-2 px-3 rounded-lg
           ring-2 ring-gray-500
           outline-2 outline-transparent
           valid:outline-green-500
@@ -136,7 +136,7 @@ const ContactForm = () => {
         <textarea
           id="message"
           className={`w-full
-          py-2 px-3 rounded
+          py-2 px-3 rounded-lg
           ring-2 ring-gray-500
           outline-2 outline-transparent
           valid:outline-green-500
@@ -165,7 +165,7 @@ const ContactForm = () => {
             onClick={handleCancel}
             className="flex-1 md:flex-1/3
             cursor-pointer
-            rounded p-2
+            rounded-lg p-2
             font-heading
             font-semibold text-lg
             border-2
@@ -179,7 +179,7 @@ const ContactForm = () => {
             className="font-heading
             flex-1 md:flex-2/3
             cursor-pointer
-            rounded p-2
+            rounded-lg p-2
             font-semibold text-lg
             text-gray-50 hover:text-gray-100
             bg-sky-500 hover:bg-sky-600"

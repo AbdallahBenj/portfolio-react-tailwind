@@ -1,5 +1,4 @@
 import { FaUserCircle } from "react-icons/fa";
-import { FaUserAstronaut } from "react-icons/fa";
 
 import useScrollSections from "@/hooks/useScrollSections.js";
 import BgFrontSection from "@/components/BgFrontSection.jsx";
@@ -10,7 +9,7 @@ const FrontSection = ({ id }) => {
   const isSectionVisible = sectionVisible[id];
 
   const page = PAGES.find((page) => page.id === id);
-  if (!page || !page.enabled) return;
+  if (!page || !page.enabled) return null;
 
   return (
     <section
@@ -181,6 +180,27 @@ const FrontSection = ({ id }) => {
               border-b w-24 my-4 text-gray-500"
               ></div>
             </div>
+
+            {/* Call to action button */}
+            <a
+              // type="submit"
+              href="#contact"
+              aria-label="Go to contact section"
+              className="font-heading
+              w-full
+              cursor-pointer
+              rounded-lg p-2
+              text-center
+              font-semibold text-lg
+              text-gray-50 hover:text-gray-100
+              bg-sky-900 hover:bg-sky-950
+              dark:bg-sky-500 dark:hover:bg-sky-600
+              transition-all duration-300
+              shadow-md hover:shadow-lg
+              active:scale-95"
+            >
+              Contact Me
+            </a>
           </div>
         </div>
       </div>
