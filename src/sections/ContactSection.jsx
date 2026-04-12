@@ -38,7 +38,7 @@ const ContactSection = ({ id }) => {
           className={`contact-cards
           flex justify-center items-center flex-1
           w-full
-          animation-transform delay-200 
+          animation-transform delay-100 
         ${
           isSectionVisible
             ? "translate-y-0 scale-100 opacity-100"
