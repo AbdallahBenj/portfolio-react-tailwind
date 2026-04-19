@@ -1,24 +1,25 @@
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useState, useRef } from "react";
 
 import useScrollSections from "@/hooks/useScrollSections.js";
 
 const ContactForm = () => {
   const visibleSections = useScrollSections(["contact"]);
   const isSectionVisible = visibleSections["contact"];
-
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-
+  
   const [result, setResult] = useState(null);
-
+  
   const handleData = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
+  
   const resetFormData = () => {
     setFormData({
       name: "",
@@ -26,14 +27,29 @@ const ContactForm = () => {
       message: "",
     });
   };
-
+  
   const handleCancel = () => {
     resetFormData();
     setResult("");
   };
-
+  
+  const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        alert("Message sent!");
+      })
+      .catch(() => {
+        alert("Failed");
+      });
 
     setResult(
       <>
