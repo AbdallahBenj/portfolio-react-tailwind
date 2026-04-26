@@ -46,12 +46,7 @@ const ContactForm = () => {
       )
       .then(() => {
         alert("Message sent!");
-      })
-      .catch(() => {
-        alert("Failed");
-      });
-
-    setResult(
+        setResult(
       <>
         Thanks for reaching out!
         <br />
@@ -59,6 +54,13 @@ const ContactForm = () => {
       </>,
     );
     resetFormData();
+      })
+      .catch((error) => {
+        alert(error.text || "Failed");
+        setResult("Failed to send message.");
+      });
+
+    
   };
 
   const fieldStyle = `form-inputs
@@ -152,9 +154,10 @@ const ContactForm = () => {
         </label>
         <textarea
           id="message"
+          rows="4"
           className={`
             ${fieldStyle}
-            resize-none rows="6"
+            resize-none
           transition-all duration-700 delay-300
           ${
             isSectionVisible

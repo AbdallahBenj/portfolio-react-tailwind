@@ -4,7 +4,7 @@ const projectsContent = [
     projectTitle: "Fitness Landing Page",
     projectSubtitle: "Smart Guided UX",
     isTextLonger: false,
-    projectImage: "images/screenshot-fitness-landing-page-900.webp",
+    projectImage: "images/fitness-landing-page-full-screenshot.webp",
     liveUrl: "https://fitlanding.vercel.app/",
     repoUrl: "https://github.com/AbdallahBenj/fitness-landing-page",
     projectDescription:
@@ -15,7 +15,7 @@ const projectsContent = [
     projectTitle: "Analytics Dashboard",
     projectSubtitle: "Modern Responsive Dashboard",
     isTextLonger: true,
-    projectImage: "images/screenshot-analytics-dashboard.webp",
+    projectImage: "images/analytics-dashboard-screenshot.webp",
     liveUrl: "https://anadash.vercel.app/",
     repoUrl: "https://github.com/AbdallahBenj/analytics-dashboard",
     projectDescription:
